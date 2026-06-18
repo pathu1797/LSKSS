@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   GraduationCap,
@@ -6,6 +7,7 @@ import {
   Images,
   BookOpen,
   Calendar,
+  Play,
 } from "lucide-react";
 import NewsMarquee from "@/components/NewsMarquee";
 import StatsBanner from "@/components/StatsBanner";
@@ -46,14 +48,14 @@ export default function HomePage() {
                 <Link href="/about" className="btn-saffron">
                   Our Legacy <ArrowRight size={16} />
                 </Link>
-                <Link href="/academy" className="btn-outline border-[var(--accent-gold)] text-[var(--gold-light)] hover:bg-[var(--accent-gold)] hover:text-[var(--dark-brown)]">
+                <Link href="/academy" className="btn-outline border-white text-white hover:bg-[var(--accent-gold)] hover:text-[var(--dark-brown)]">
                   Explore Academy <GraduationCap size={16} />
                 </Link>
               </div>
             </div>
 
             <div className="relative">
-              <div className="w-full aspect-[4/3] border-2 border-[var(--accent-gold)]/40 bg-[var(--parchment-dark)]/10 rounded-sm flex items-center justify-center backdrop-blur-sm">
+              <div className="w-full aspect-[4/3] border-2 border-[var(--accent-gold)]/40 bg-[var(--parchment-dark)]/10 rounded-lg overflow-hidden flex items-center justify-center backdrop-blur-sm">
                 <div className="text-center">
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full border border-[var(--accent-gold)]/20 flex items-center justify-center">
                     <Images size={32} className="text-[var(--accent-gold)]/50" />
@@ -73,6 +75,99 @@ export default function HomePage() {
 
       <StatsBanner />
 
+      {/* Featured YouTube Videos Section */}
+      <section className="bg-[var(--dark-brown)]">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
+          <div className="text-center mb-12">
+            <p className="text-[var(--primary-saffron)] text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
+              — Watch —
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+              Featured Performances
+            </h2>
+            <p className="text-sm text-[var(--gold-light)]/50 mt-3 font-[family-name:var(--font-body)] max-w-lg mx-auto">
+              आरती ओवाळू मुळमाये रेणुके — साडेतीन शक्ती पिठाची पारंपारिक आरती
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/IglIO4ejxd0"
+                  title="साडेतीन शक्ती पिठाची पारंपारिक आरती — Part 1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  आरती ओवाळू मुळमाये रेणुके
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  शिवकालीन आद्यशाहिर अज्ञानदास लिखित · गायन व संबळ वादन: हरिदास शिंदे व सहकारी
+                </p>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/Whp7YhlJfaU"
+                  title="साडेतीन शक्ती पिठाची पारंपारिक आरती — Part 2"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  रणधूमाळी संबळ पथक
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  महाराष्ट्रातील सर्वात पहिले पारंपरिक लोक कला संबळ पथक · PankNoise
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* YouTube Playlists */}
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://www.youtube.com/playlist?list=PLxF6H57GoZMjHrxS_sA-UkG_u161AEQQI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline border-[var(--accent-gold)] text-[var(--gold-light)] hover:bg-[var(--accent-gold)] hover:text-[var(--dark-brown)] text-sm py-3 px-6"
+            >
+              <Image src="/images/youtube.png" alt="" width={18} height={18} className="rounded-sm" />
+              Maharashtra Authentic Folk Concert
+            </a>
+            <a
+              href="https://www.youtube.com/playlist?list=PLxF6H57GoZMiDxLjhb72Nkd50syQWcaF-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline border-[var(--accent-gold)] text-[var(--gold-light)] hover:bg-[var(--accent-gold)] hover:text-[var(--dark-brown)] text-sm py-3 px-6"
+            >
+              <Image src="/images/youtube.png" alt="" width={18} height={18} className="rounded-sm" />
+              वारसा महाराष्ट्राचा
+            </a>
+            <a
+              href="https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-saffron text-sm py-3 px-6"
+            >
+              <Image src="/images/youtube.png" alt="" width={18} height={18} className="rounded-sm" />
+              Subscribe on YouTube <ArrowRight size={14} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Activities Section */}
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="text-center mb-12">
@@ -104,7 +199,7 @@ export default function HomePage() {
                   affiliated with Akhil Bharatiya Gandharva Mahavidyalaya. Courses in vocal,
                   instrumental, folk arts, and dance.
                 </p>
-                <Link href="/academy" className="btn-outline text-sm py-2.5 px-6">
+                <Link href="/academy" className="btn-outline text-[var(--accent-gold)] text-sm py-2.5 px-6">
                   Explore Courses
                 </Link>
               </div>
@@ -126,7 +221,7 @@ export default function HomePage() {
                   PM Narendra Modi — our global footprint spans 6 US cities
                   and 10+ prestigious national awards.
                 </p>
-                <Link href="/achievements" className="btn-outline text-sm py-2.5 px-6">
+                <Link href="/achievements" className="btn-outline text-[var(--accent-gold)] text-sm py-2.5 px-6">
                   View Achievements
                 </Link>
               </div>
@@ -165,20 +260,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* About Section */}
       <section className="bg-[var(--parchment-dark)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div className="grid grid-cols-2 gap-4">
-              {[1, 2, 3, 4].map((n) => (
-                <div
-                  key={n}
-                  className={`bg-[var(--bg-parchment)] border border-[var(--accent-gold)]/20 rounded-sm flex items-center justify-center ${
-                    n === 1 ? "h-52 col-span-2" : "h-44"
-                  }`}
-                >
-                  <Images size={24} className="text-[var(--accent-gold)]/25" />
+            <div className="flex items-center justify-center">
+              <div className="relative">
+                <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-4 border-[var(--accent-gold)] overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/logo.jpeg"
+                    alt="लोकसंस्कृती कला सेवा संघ"
+                    width={320}
+                    height={320}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
-              ))}
+                <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-[var(--primary-saffron)] rounded-full flex items-center justify-center shadow-lg">
+                  <span className="text-white text-xs font-bold font-[family-name:var(--font-body)] text-center leading-tight">
+                    Est.<br />2022
+                  </span>
+                </div>
+              </div>
             </div>
 
             <div>
@@ -210,6 +312,103 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Connect Section — Social Media CTA */}
+      <section className="bg-[var(--dark-brown)]">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-20">
+          <div className="text-center mb-10">
+            <p className="text-[var(--primary-saffron)] text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
+              — Connect —
+            </p>
+            <span className="gold-divider mx-auto" />
+            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mt-4 mb-3">
+              Follow Us on Social Media
+            </h2>
+            <p className="text-sm text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] max-w-md mx-auto">
+              Stay updated with performances, events, and cultural heritage stories
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-3xl mx-auto">
+            {[
+              {
+                href: "https://www.instagram.com/pandurang.shinde.564?igsh=ajVicjdjbGR0MzIw",
+                label: "Instagram",
+                icon: "/images/instagram.png",
+                desc: "Photos & Reels",
+                color: "from-pink-600 to-purple-600",
+              },
+              {
+                href: "https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n",
+                label: "YouTube",
+                icon: "/images/youtube.png",
+                desc: "Performances",
+                color: "from-red-600 to-red-700",
+              },
+              {
+                href: "https://www.facebook.com/share/197zkHHGdD/",
+                label: "Facebook",
+                icon: "/images/facebook.png",
+                desc: "Updates & Events",
+                color: "from-blue-600 to-blue-700",
+              },
+              {
+                href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+                label: "WhatsApp",
+                icon: "/images/whatsapp.png",
+                desc: "Direct Chat",
+                color: "from-green-600 to-green-700",
+              },
+            ].map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-[var(--dark-brown-deep)] border border-[var(--accent-gold)]/20 rounded-lg p-6 text-center hover:border-[var(--primary-saffron)]/50 hover:scale-105 transition-all duration-300"
+              >
+                <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-[var(--dark-brown)] border border-[var(--accent-gold)]/20 flex items-center justify-center group-hover:border-[var(--accent-gold)]/50 transition-colors">
+                  <Image
+                    src={social.icon}
+                    alt={social.label}
+                    width={30}
+                    height={30}
+                    className="object-contain rounded-sm"
+                  />
+                </div>
+                <p className="text-sm font-semibold text-[var(--gold-light)] font-[family-name:var(--font-body)] mb-1">
+                  {social.label}
+                </p>
+                <p className="text-[10px] text-[var(--gold-light)]/40">
+                  {social.desc}
+                </p>
+              </a>
+            ))}
+          </div>
+
+          {/* WhatsApp QR */}
+          <div className="mt-10 text-center">
+            <p className="text-xs text-[var(--gold-light)]/40 mb-3 font-[family-name:var(--font-body)]">
+              Or scan to connect on WhatsApp
+            </p>
+            <a
+              href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white p-3 rounded-xl hover:shadow-lg hover:shadow-[var(--accent-gold)]/20 transition-shadow"
+            >
+              <Image
+                src="/images/whatsapp-qr.jpeg"
+                alt="WhatsApp QR Code"
+                width={120}
+                height={120}
+                className="rounded-lg"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Events Section */}
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="text-center mb-10">

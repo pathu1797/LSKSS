@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Music, ArrowUp } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin, ArrowUp } from "lucide-react";
 
 const quickLinks = [
   { href: "/home", label: "Home" },
@@ -10,6 +11,29 @@ const quickLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/pandurang.shinde.564?igsh=ajVicjdjbGR0MzIw",
+    label: "Instagram",
+    icon: "/images/instagram.png",
+  },
+  {
+    href: "https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n",
+    label: "YouTube",
+    icon: "/images/youtube.png",
+  },
+  {
+    href: "https://www.facebook.com/share/197zkHHGdD/",
+    label: "Facebook",
+    icon: "/images/facebook.png",
+  },
+  {
+    href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+    label: "WhatsApp",
+    icon: "/images/whatsapp.png",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[var(--dark-brown)] text-[var(--gold-light)]">
@@ -17,25 +41,55 @@ export default function Footer() {
 
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-14 lg:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          {/* Column 1: About + Logo */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full border-2 border-[var(--accent-gold)] bg-[var(--dark-brown-deep)] flex items-center justify-center flex-shrink-0">
-                <Music size={18} className="text-[var(--primary-saffron)]" />
+              <div className="w-12 h-12 rounded-full border-2 border-[var(--accent-gold)] overflow-hidden flex-shrink-0">
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="लोकसंस्कृती कला सेवा संघ"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover"
+                />
               </div>
               <h3 className="font-[family-name:var(--font-heading)] text-base font-bold text-white">
                 लोकसंस्कृती कला सेवा संघ
               </h3>
             </div>
-            <p className="text-sm leading-loose opacity-80 mb-3">
+            <p className="text-sm leading-loose opacity-80 mb-4">
               Conservation, development, and global promotion of national folk
               art and culture. 17th generation custodians of the Gondhali tradition
               since the court of Chhatrapati Shivaji Maharaj.
             </p>
-            <p className="text-[10px] tracking-widest uppercase opacity-60">
+            <p className="text-[10px] tracking-widest uppercase opacity-60 mb-5">
               Reg. No. महा .३६७/२०२२ एफ - २४१२६
             </p>
+
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="w-9 h-9 rounded-full bg-[var(--dark-brown-deep)] border border-[var(--accent-gold)]/30 flex items-center justify-center hover:border-[var(--primary-saffron)] hover:scale-110 transition-all"
+                >
+                  <Image
+                    src={social.icon}
+                    alt={social.label}
+                    width={20}
+                    height={20}
+                    className="rounded-sm object-contain"
+                  />
+                </a>
+              ))}
+            </div>
           </div>
 
+          {/* Column 2: Quick Links */}
           <div>
             <h4 className="font-[family-name:var(--font-heading)] text-sm font-bold text-white mb-4">
               Quick Links
@@ -55,6 +109,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Column 3: Academy + WhatsApp QR */}
           <div>
             <h4 className="font-[family-name:var(--font-heading)] text-sm font-bold text-white mb-4">
               स्वरसंध्या संगीत निकेतन
@@ -79,8 +134,33 @@ export default function Footer() {
             >
               View All Courses →
             </Link>
+
+            {/* WhatsApp QR Code */}
+            <div className="mt-6 pt-5 border-t border-[var(--accent-gold)]/20">
+              <p className="text-xs font-semibold text-white mb-2">
+                WhatsApp वर संपर्क करा
+              </p>
+              <a
+                href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white p-2 rounded-lg hover:shadow-lg transition-shadow"
+              >
+                <Image
+                  src="/images/whatsapp-qr.jpeg"
+                  alt="WhatsApp QR Code — Scan to connect"
+                  width={100}
+                  height={100}
+                  className="rounded"
+                />
+              </a>
+              <p className="text-[10px] opacity-50 mt-1.5">
+                Scan to chat on WhatsApp
+              </p>
+            </div>
           </div>
 
+          {/* Column 4: Contact */}
           <div>
             <h4 className="font-[family-name:var(--font-heading)] text-sm font-bold text-white mb-4">
               Contact Us
@@ -121,6 +201,31 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+
+            {/* YouTube Playlists */}
+            <div className="mt-5 pt-4 border-t border-[var(--accent-gold)]/20">
+              <p className="text-xs font-semibold text-white mb-2.5">
+                YouTube Playlists
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLxF6H57GoZMjHrxS_sA-UkG_u161AEQQI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[10px] opacity-70 hover:text-[var(--primary-saffron)] hover:opacity-100 transition-colors mb-2"
+              >
+                <Image src="/images/youtube.png" alt="YouTube" width={14} height={14} className="rounded-sm" />
+                Maharashtra Authentic Folk Concert
+              </a>
+              <a
+                href="https://www.youtube.com/playlist?list=PLxF6H57GoZMiDxLjhb72Nkd50syQWcaF-"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[10px] opacity-70 hover:text-[var(--primary-saffron)] hover:opacity-100 transition-colors"
+              >
+                <Image src="/images/youtube.png" alt="YouTube" width={14} height={14} className="rounded-sm" />
+                वारसा महाराष्ट्राचा
+              </a>
+            </div>
           </div>
         </div>
       </div>

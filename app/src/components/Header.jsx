@@ -2,16 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   Phone,
   Mail,
   Menu,
   X,
-  Music,
-  Globe,
-  ExternalLink,
-  Share2,
 } from "lucide-react";
 
 const navLinks = [
@@ -21,6 +18,29 @@ const navLinks = [
   { href: "/achievements", label: "Achievements" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
+];
+
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/pandurang.shinde.564?igsh=ajVicjdjbGR0MzIw",
+    label: "Instagram",
+    icon: "/images/instagram.png",
+  },
+  {
+    href: "https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n",
+    label: "YouTube",
+    icon: "/images/youtube.png",
+  },
+  {
+    href: "https://www.facebook.com/share/197zkHHGdD/",
+    label: "Facebook",
+    icon: "/images/facebook.png",
+  },
+  {
+    href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+    label: "WhatsApp",
+    icon: "/images/whatsapp.png",
+  },
 ];
 
 export default function Header() {
@@ -48,30 +68,60 @@ export default function Header() {
             </a>
           </div>
           <div className="flex items-center gap-3">
-            <a href="#" aria-label="Facebook" className="hover:text-white transition-colors">
-              <Globe size={14} />
-            </a>
-            <a href="#" aria-label="Instagram" className="hover:text-white transition-colors">
-              <ExternalLink size={14} />
-            </a>
-            <a href="#" aria-label="YouTube" className="hover:text-white transition-colors">
-              <Share2 size={14} />
-            </a>
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="hover:opacity-100 opacity-80 transition-opacity"
+              >
+                <Image
+                  src={social.icon}
+                  alt={social.label}
+                  width={18}
+                  height={18}
+                  className="rounded-sm object-contain"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
 
       <nav className="bg-[var(--bg-parchment)] border-b-2 border-[var(--accent-gold)]">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between h-16 lg:h-[72px]">
-          <Link href="/home" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-full border-2 border-[var(--accent-gold)] bg-[var(--parchment-dark)] flex items-center justify-center flex-shrink-0">
-              <Music size={20} className="text-[var(--primary-saffron)]" />
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between h-20 lg:h-[88px]">
+          <Link href="/home" className="flex items-center gap-4 group">
+            <div className="relative flex-shrink-0">
+              <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-[var(--accent-gold)] bg-[var(--parchment-dark)] flex items-center justify-center overflow-hidden header-logo">
+                <Image
+                  src="/images/puroshottam-shinde.jpg"
+                  alt="Puroshottam Shinde"
+                  width={72}
+                  height={72}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="header-logo-ring" />
+            </div>
+            <div className="relative flex-shrink-0">
+              <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-[var(--accent-gold)] bg-[var(--parchment-dark)] flex items-center justify-center overflow-hidden header-logo">
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="लोकसंस्कृती कला सेवा संघ Logo"
+                  width={72}
+                  height={72}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="header-logo-ring" />
             </div>
             <div className="hidden sm:block leading-tight">
-              <span className="block text-sm font-bold text-[var(--text-espresso)] font-[family-name:var(--font-heading)] tracking-wide">
+              <span className="block text-lg lg:text-xl font-bold text-[var(--text-espresso)] font-[family-name:var(--font-heading)] tracking-wide">
                 लोकसंस्कृती कला सेवा संघ
               </span>
-              <span className="block text-[10px] text-[var(--accent-gold)] font-medium tracking-widest uppercase">
+              <span className="block text-xs text-[var(--accent-gold)] font-semibold tracking-widest uppercase">
                 Lok Sanskruti Kala Seva Sangh
               </span>
             </div>
@@ -120,9 +170,18 @@ export default function Header() {
       />
       <div className={`mobile-nav-drawer ${mobileOpen ? "active" : ""}`}>
         <div className="flex items-center justify-between p-4 border-b border-[var(--accent-gold)]/30">
-          <span className="text-[var(--gold-light)] font-[family-name:var(--font-heading)] text-sm font-bold">
-            लोकसंस्कृती कला सेवा संघ
-          </span>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/images/logo.jpeg"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+            <span className="text-[var(--gold-light)] font-[family-name:var(--font-heading)] text-sm font-bold">
+              लोकसंस्कृती कला सेवा संघ
+            </span>
+          </div>
           <button
             onClick={() => setMobileOpen(false)}
             className="text-[var(--gold-light)] p-1"
@@ -163,10 +222,29 @@ export default function Header() {
           </a>
           <a
             href="mailto:Loksanskruti.kalaseva.sangh@gmail.com"
-            className="flex items-center gap-2 text-[var(--gold-light)] text-xs"
+            className="flex items-center gap-2 text-[var(--gold-light)] text-xs mb-4"
           >
             <Mail size={12} /> Loksanskruti.kalaseva.sangh@gmail.com
           </a>
+          <div className="flex items-center gap-3 pb-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+              >
+                <Image
+                  src={social.icon}
+                  alt={social.label}
+                  width={24}
+                  height={24}
+                  className="rounded-sm object-contain"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </header>

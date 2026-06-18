@@ -1,15 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   MapPin,
   Phone,
   Mail,
   Clock,
   Send,
-  Globe,
-  ExternalLink,
-  Share2,
 } from "lucide-react";
 
 const courseOptions = [
@@ -19,6 +17,29 @@ const courseOptions = [
   "Instrumental (Harmonium, Tabla, etc.)",
   "Dance (Kathak / Modern)",
   "General Inquiry",
+];
+
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/pandurang.shinde.564?igsh=ajVicjdjbGR0MzIw",
+    label: "Instagram",
+    icon: "/images/instagram.png",
+  },
+  {
+    href: "https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n",
+    label: "YouTube",
+    icon: "/images/youtube.png",
+  },
+  {
+    href: "https://www.facebook.com/share/197zkHHGdD/",
+    label: "Facebook",
+    icon: "/images/facebook.png",
+  },
+  {
+    href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+    label: "WhatsApp",
+    icon: "/images/whatsapp.png",
+  },
 ];
 
 export default function ContactPage() {
@@ -251,51 +272,92 @@ export default function ContactPage() {
                       </a>
                     </div>
                   </li>
-
-                  <li className="flex items-start gap-4">
-                    <div className="w-9 h-9 flex-shrink-0 flex items-center justify-center bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 rounded-sm">
-                      <Clock size={14} className="text-[var(--primary-saffron)]" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-0.5">
-                        WhatsApp Inquiry
-                      </p>
-                      <p className="text-xs text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)]">
-                        Message on 7020692252
-                      </p>
-                    </div>
-                  </li>
                 </ul>
               </div>
 
-              <div className="card-institutional p-0 overflow-hidden">
-                <div className="h-56 bg-[var(--parchment-dark)] flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin size={28} className="mx-auto text-[var(--accent-gold)]/25 mb-2" />
-                    <p className="text-[var(--accent-gold)]/30 text-[10px] font-[family-name:var(--font-body)]">
-                      Google Maps Embed
+              {/* WhatsApp QR Code Card */}
+              <div className="card-institutional p-7">
+                <h3 className="text-lg font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
+                  WhatsApp वर संपर्क करा
+                </h3>
+                <span className="gold-divider mb-5" />
+                <div className="mt-5 flex items-center gap-5">
+                  <a
+                    href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 bg-white p-2.5 rounded-xl border border-[var(--accent-gold)]/20 hover:shadow-lg transition-shadow"
+                  >
+                    <Image
+                      src="/images/whatsapp-qr.jpeg"
+                      alt="WhatsApp QR Code — Scan to connect"
+                      width={120}
+                      height={120}
+                      className="rounded-lg"
+                    />
+                  </a>
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Image src="/images/whatsapp.png" alt="WhatsApp" width={24} height={24} className="rounded-sm" />
+                      <p className="text-sm font-bold text-[var(--text-espresso)] font-[family-name:var(--font-body)]">
+                        WhatsApp
+                      </p>
+                    </div>
+                    <p className="text-xs text-[var(--text-espresso)]/60 font-[family-name:var(--font-body)] leading-relaxed mb-3">
+                      Scan the QR code or click the button below to message us directly on WhatsApp.
                     </p>
-                    <p className="text-[var(--accent-gold)]/20 text-[9px] font-[family-name:var(--font-body)] mt-1">
-                      Kedgaon, Ahmednagar 414001
-                    </p>
+                    <a
+                      href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-xs font-semibold rounded-lg hover:bg-green-700 transition-colors"
+                    >
+                      <Image src="/images/whatsapp.png" alt="" width={16} height={16} className="rounded-sm" />
+                      Chat on WhatsApp
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <div className="card-institutional p-6 flex items-center gap-5">
-                <p className="text-xs font-bold text-[var(--text-espresso)] font-[family-name:var(--font-body)]">
+              {/* Real Google Maps Embed */}
+              <div className="card-institutional p-0 overflow-hidden h-64 md:h-80 w-full relative">
+                <iframe
+                  src="https://maps.google.com/maps?q=Swarsandhya+Music+Academy+and+Swarsandhya+Sangit+Niketan,+Kedgaon,+Ahmednagar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lok Sanskruti Kala Seva Sangh Location Map"
+                  className="absolute inset-0 grayscale contrast-125 opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+                />
+              </div>
+
+              {/* Social Media Card */}
+              <div className="card-institutional p-6">
+                <p className="text-xs font-bold text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-3">
                   Follow Us:
                 </p>
-                <div className="flex items-center gap-4">
-                  <a href="#" className="w-9 h-9 flex items-center justify-center bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 hover:bg-[var(--primary-saffron)] hover:text-white hover:border-[var(--primary-saffron)] transition-colors text-[var(--text-espresso)]" aria-label="Facebook">
-                    <Globe size={16} />
-                  </a>
-                  <a href="#" className="w-9 h-9 flex items-center justify-center bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 hover:bg-[var(--primary-saffron)] hover:text-white hover:border-[var(--primary-saffron)] transition-colors text-[var(--text-espresso)]" aria-label="Instagram">
-                    <ExternalLink size={16} />
-                  </a>
-                  <a href="#" className="w-9 h-9 flex items-center justify-center bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 hover:bg-[var(--primary-saffron)] hover:text-white hover:border-[var(--primary-saffron)] transition-colors text-[var(--text-espresso)]" aria-label="YouTube">
-                    <Share2 size={16} />
-                  </a>
+                <div className="flex items-center gap-3">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.label}
+                      className="w-10 h-10 flex items-center justify-center bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 rounded-lg hover:border-[var(--primary-saffron)] hover:scale-110 transition-all"
+                    >
+                      <Image
+                        src={social.icon}
+                        alt={social.label}
+                        width={22}
+                        height={22}
+                        className="object-contain rounded-sm"
+                      />
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

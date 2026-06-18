@@ -280,7 +280,7 @@ All reference content is in the `Information/` folder at the project root:
 
 ### 🔲 Remaining / Next Steps
 - [ ] Replace all image placeholders with real photographs (user will provide)
-- [ ] Add real Google Maps embed on contact page
+- [x] Add real Google Maps embed on contact page
 - [ ] Wire up contact form to a backend (e.g., Firebase, email API)
 - [ ] Add SEO metadata per page (partially done — each page has `metadata` export)
 - [ ] Add Open Graph / social media meta tags

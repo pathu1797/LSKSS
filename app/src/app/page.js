@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Music } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "लोकसंस्कृती कला सेवा संघ | Welcome",
@@ -14,8 +15,15 @@ export default function SplashPage() {
 
       <div className="flex-1 flex flex-col items-center justify-center px-6 sm:px-10 lg:px-16 py-14 lg:py-20">
         <div className="text-center mb-12">
-          <div className="w-16 h-16 mx-auto mb-5 rounded-full border-2 border-[var(--accent-gold)] bg-[var(--dark-brown-deep)] flex items-center justify-center">
-            <Music size={28} className="text-[var(--primary-saffron)]" />
+          <div className="w-24 h-24 mx-auto mb-5 rounded-full border-3 border-[var(--accent-gold)] bg-[var(--dark-brown-deep)] flex items-center justify-center overflow-hidden shadow-lg shadow-[var(--accent-gold)]/20">
+            <Image
+              src="/images/logo.jpeg"
+              alt="लोकसंस्कृती कला सेवा संघ"
+              width={96}
+              height={96}
+              className="rounded-full object-cover"
+              priority
+            />
           </div>
           <h2 className="text-[var(--accent-gold)] text-base sm:text-lg tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
             लोकसंस्कृती कला सेवा संघ
@@ -28,17 +36,15 @@ export default function SplashPage() {
         <div className="w-full max-w-4xl mx-auto text-center mb-10">
           <div className="inline-block relative mb-10">
             <div className="w-[240px] h-[300px] sm:w-[280px] sm:h-[350px] border-4 border-[var(--accent-gold)] bg-[var(--dark-brown-deep)] p-3 rounded-sm mx-auto">
-              <div className="w-full h-full border border-[var(--accent-gold)]/40 bg-[var(--dark-brown)] flex items-center justify-center rounded-sm">
-                <div className="text-center px-6">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-[var(--accent-gold)]/30 flex items-center justify-center">
-                    <svg className="w-10 h-10 text-[var(--accent-gold)]/30" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
-                  </div>
-                  <p className="text-[var(--accent-gold)]/40 text-xs font-[family-name:var(--font-body)]">
-                    Portrait Placeholder
-                  </p>
-                </div>
+              <div className="w-full h-full border border-[var(--accent-gold)]/40 overflow-hidden rounded-sm">
+                <Image
+                  src="/images/puroshottam-shinde.jpg"
+                  alt="वै. ह.भ.प. पुरुषोत्तम महाराज शिंदे (हातवळणकर)"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                  priority
+                />
               </div>
             </div>
             <div className="absolute -top-1.5 -left-1.5 w-7 h-7 border-t-2 border-l-2 border-[var(--primary-saffron)]" />
