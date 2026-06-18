@@ -1,0 +1,17 @@
+# TECH STACK
+Framework: Next.js (App Router)
+Styling: Tailwind CSS
+Icons: Lucide React or similar clean SVG icons
+
+# ROUTING & LAYOUT ARCHITECTURE
+1. / (Splash Screen): The "Entry" layout. A full-page landing screen before the main website. Requires a prominent empty portrait placeholder for Late H.B.P. Purushottam Maharaj Shinde, alongside his foundational information/biography, and a clear "Enter Website" button routing to /home. No global header/footer on this page.
+2. /home (Main Landing): The "Gateway" layout. Requires an asymmetrical grid ("Bento Box") for navigation, scrolling news marquees, and institutional statistical banners.
+3. /about (Legacy): The "Story" layout. Requires a vertical timeline design and heavy editorial text blocks detailing the 17th-generation lineage.
+4. /academy (Education): The "Directory" layout. Requires a 3-column structured card grid categorizing courses (Vocal, Instrumental, Dance).
+5. /achievements (Global Footprint): The "Proof" layout. Requires a section for US Tour details and a dark-themed section for cinematic/video credits.
+6. /gallery (Media Archive): The "Visual" layout. A robust CSS masonry or responsive grid layout designed to eventually hold ~50 photos. 
+7. /contact (Admissions): The "Action" layout. Requires a strict split-screen UI (Left: Inquiry Form, Right: Contact details and Map).
+
+# GLOBAL COMPONENTS
+- Header: Two-tier navigation. Top thin bar for contact info, bottom thick bar for navigation. Appears on all pages except the Splash Screen.
+- Footer: 4-column massive layout with deep institutional branding. Appears on all pages except the Splash Screen.

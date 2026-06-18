@@ -1,0 +1,19 @@
+# DESIGN DIRECTIVES
+Vibe: Institutional, culturally authoritative, historical, and deeply Maharashtrian. 
+Restriction: ZERO rounded bubbly borders, ZERO generic tech startup aesthetics. Use sharp or very slightly rounded corners (max 4px). Even though the colors are bright (Orange/Gold), the layout MUST remain rigid, academic, and structured.
+
+# COLOR PALETTE
+Background: #FAF9F6 (Warm Alabaster / Parchment)
+Primary Brand: #D95319 (Traditional Saffron / Deep Marigold Orange)
+Accent: #C5A059 (Antique Matte Gold)
+Text: #2A1610 (Deep Espresso / Off-Black for high contrast)
+Dark Mode / Footer Panels: #4A2511 (Deep Earthy Brown)
+
+# TYPOGRAPHY
+Headings: 'Playfair Display' or 'Merriweather' (Heavy, elegant Serif).
+Body/Buttons/UI: 'Inter' or 'Lato' (Clean Sans-Serif).
+
+# UI ELEMENT RULES
+Buttons: Sharp corners, solid Primary Orange or Gold with dark text. No gradient buttons.
+Cards/Containers: Earthy brown or parchment backgrounds with thin gold borders (1px solid #C5A059).
+Shadows: Keep shadows tight and dark; avoid large, diffused, soft colorful glows.
