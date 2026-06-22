@@ -1,6 +1,6 @@
 # Project State Handover — Loksanskruti Kala Seva Sangh
 
-> **Generated:** 2026-06-17 | **Status:** Frontend scaffold complete, CSS polished, no images yet.
+> **Generated:** 2026-06-22 | **Status:** Frontend scaffold complete, CSS polished, splash screen uses real images (NEW.png, puroshottam-shinde.jpg). Other pages still use placeholders.
 > **Purpose:** Feed this entire file to a new AI agent so it can resume work with zero context loss.
 
 ---
@@ -77,7 +77,7 @@ app/src/
 
 | Route | Type | Special Rules |
 |---|---|---|
-| `/` | Splash Screen | Full-screen dark-brown page. Centered portrait placeholder of Purushottam Maharaj Shinde, Marathi biography in 2-column panel, "प्रवेश करा — Enter Website" CTA button linking to `/home`. NO Header/Footer. |
+| `/` | Splash Screen | Full-screen dark-brown page. Uses `NEW.png` — a single unified image containing the org logo, 3D Marathi name, and English subtitle. Below it: centered portrait of Purushottam Maharaj Shinde (`puroshottam-shinde.jpg`), Marathi biography in 2-column panel, "प्रवेश करा — Enter Website" CTA button linking to `/home`. NO Header/Footer. |
 | `/home` | Main Landing | Hero banner, NewsMarquee, StatsBanner, Activities bento grid (Academy + Achievements + Gallery), About preview section, Events preview cards. |
 | `/about` | About Us | Intro paragraph, alternating timeline (grid-based `[1fr_60px_1fr]` with centered dots), Social Impact cards. |
 | `/academy` | Academy | Course grid, key features, class schedule CTA. Academy = Swarsandhya Sangeet Niketan. |
@@ -241,6 +241,25 @@ All reference content is in the `Information/` folder at the project root:
 | `shinde_bio_extracted.txt` | Detailed biography of Purushottam Maharaj Shinde (Marathi/English) |
 | `haridas_bio.txt` | Prof. Haridas Shinde biography |
 | `haridas_marathi.txt` | Haridas Shinde Marathi content |
+| `mahitipatra_extracted.txt` | Extracted mahitipatra (information letter) content |
+| `माहितीपत्रक.docx` | Original Marathi information letter (Word document) |
+| `Screenshot (394).png` | Reference screenshot |
+
+### Image Assets (`app/public/images/`)
+
+| File | Usage |
+|---|---|
+| `NEW.png` | **Splash screen header** — unified image with org logo, 3D Marathi name, and English subtitle on dark brown background |
+| `puroshottam-shinde.jpg` | Splash screen portrait of the spiritual father |
+| `logo.jpeg` | Org logo (used in Header component) |
+| `text-marathi.png` | Legacy 3D Marathi text (replaced by NEW.png on splash, kept for reference) |
+| `instagram.png` | Social media icon |
+| `youtube.png` | Social media icon |
+| `facebook.png` | Social media icon |
+| `whatsapp.png` | Social media icon |
+| `whatsapp-qr.jpeg` | WhatsApp QR code (contact page) |
+
+Source photographs are in `Photos To be used in Website/` at the project root.
 
 ---
 
@@ -266,7 +285,7 @@ All reference content is in the `Information/` folder at the project root:
 - [x] Footer with 4-column grid
 - [x] NewsMarquee with infinite scroll
 - [x] StatsBanner with 4 stats
-- [x] Splash screen with centered portrait + Marathi biography
+- [x] Splash screen with unified `NEW.png` header + centered portrait + Marathi biography
 - [x] Home page: hero, bento grid, about preview, events section
 - [x] About page: intro, grid-based alternating timeline, social impact cards
 - [x] Academy page: course grid, key features, CTA
@@ -277,9 +296,11 @@ All reference content is in the `Information/` folder at the project root:
 - [x] Layout centering fix (max-w-[1400px], removed rogue reset)
 - [x] All comments stripped from source files
 - [x] Build verification passes on all 7 routes
+- [x] Splash screen header: replaced separate logo/text-marathi.png/English text with single NEW.png
+- [x] GitHub push to `origin/main` (https://github.com/pathu1797/LSKSS.git)
 
 ### 🔲 Remaining / Next Steps
-- [ ] Replace all image placeholders with real photographs (user will provide)
+- [ ] Replace remaining image placeholders with real photographs (user will provide)
 - [x] Add real Google Maps embed on contact page
 - [ ] Wire up contact form to a backend (e.g., Firebase, email API)
 - [ ] Add SEO metadata per page (partially done — each page has `metadata` export)
