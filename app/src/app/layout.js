@@ -18,7 +18,7 @@ const inter = Inter({
 export const metadata = {
   title: "लोकसंस्कृती कला सेवा संघ | Lok Sanskruti Kala Seva Sangh",
   description:
-    "In gonf17th generation custodians of Maharashtrian folk art & culture. Established 2022, Ahilyanagar. Home of Swarsandhya Sangeet Niketan — classical music education affiliated with Akhil Bharatiya Gandharva Mahavidyalaya.",
+    "In Gondhali tradition 17th generation custodians of Maharashtrian folk art & culture. Established 2022, Ahilyanagar. Home of Swarsandhya Sangeet Niketan — classical music education affiliated with Akhil Bharatiya Gandharva Mahavidyalaya.",
   keywords:
     "Lok Sanskruti, Gondhali, Maharashtrian folk art, Shinde, Swarsandhya Sangeet Niketan, classical music, Ahmednagar",
 };
