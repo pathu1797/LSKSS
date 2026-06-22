@@ -77,13 +77,11 @@ export default function AboutPage() {
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-14 lg:py-18">
           <p className="text-base sm:text-lg text-[var(--text-espresso)] font-[family-name:var(--font-body)] leading-loose text-center max-w-3xl mx-auto">
-            Lok Sanskruti Kala Seva Sangh was established on{" "}
-            <strong>August 15, 2022</strong>, in Ahilyanagar (Ahmednagar) by{" "}
-            <strong>Prof. Pandurang Uttam Shinde</strong> and{" "}
-            <strong>Prof. Haridas Shinde</strong>. The founders are the{" "}
-            <strong>17th descendants</strong> of Gondhali Agyandas, the legendary
-            Shahir who served in the court of{" "}
-            <strong>Chhatrapati Shivaji Maharaj</strong>. Their mission: the
+            Lok Sanskruti Kala Seva Sangh was established on August 15, 2022, in
+            Ahilyanagar (Ahmednagar) by Prof. Pandurang Uttam Shinde and Prof.
+            Haridas Shinde. The founders are <em>In the Gondhali Traditions</em> the 17th
+            descendants of Gondhali Agyandas, the legendary Shahir who served in
+            the court of Chhatrapati Shivaji Maharaj. Their mission: the
             conservation, development, and global promotion of national folk art
             and culture.
           </p>
