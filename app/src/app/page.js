@@ -54,7 +54,7 @@ export default function SplashPage() {
             ( हातवळणकर )
           </p>
           <p className="text-[var(--gold-light)] text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold mb-3 tracking-wide">
-            प्रेरणस्थान
+            प्रेरणास्थान
           </p>
           <p className="text-[var(--accent-gold)] text-xs sm:text-sm tracking-wider uppercase font-[family-name:var(--font-body)]">
             समाजभूषण · विद्वान · विद्यावाचस्पती · परमपुज्य गुरुवर्य
