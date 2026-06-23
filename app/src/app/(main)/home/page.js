@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import NewsMarquee from "@/components/NewsMarquee";
 import StatsBanner from "@/components/StatsBanner";
+import AutoImageCarousel from "@/components/AutoImageCarousel";
 
 export const metadata = {
   title: "Home | लोकसंस्कृती कला सेवा संघ",
@@ -33,7 +34,7 @@ export default function HomePage() {
                 Since the Court of Chhatrapati Shivaji Maharaj
               </p>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] leading-tight mb-5">
-                17th Generation Custodians
+                In the Gondhali tradition 17th Generation Custodians
                 <br />
                 <span className="text-[var(--primary-saffron)]">
                   of Maharashtrian Folk Art
@@ -205,23 +206,30 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="card-institutional p-0 overflow-hidden group">
-              <div className="h-52 bg-[var(--parchment-dark)] flex items-center justify-center">
-                <div className="text-center">
-                  <Trophy size={40} className="mx-auto text-[var(--accent-gold)]/30 mb-2" />
-                  <p className="text-[var(--accent-gold)]/40 text-[10px]">Image</p>
-                </div>
+            <div className="card-institutional p-0 overflow-hidden flex flex-col h-full group">
+              <div className="relative w-full h-[250px] sm:h-[300px]">
+                <AutoImageCarousel 
+                  images={[
+                    "/Achievements/IMG_20260221_000238.jpg",
+                    "/Achievements/FB_IMG_1710854260169.jpg",
+                    "/Achievements/FB_IMG_1710928605794.jpg",
+                    "/Achievements/FB_IMG_1758850738168.jpg",
+                    "/Achievements/WhatsApp Image 2025-07-24 at 17.32.45(1).jpeg",
+                    "/Achievements/WhatsApp Image 2025-07-24 at 17.33.18.jpeg"
+                  ]}
+                  altText="Lok Sanskruti Kala Seva Sangh Achievements"
+                />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <h3 className="text-xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-3">
                   Achievements
                 </h3>
-                <p className="text-sm text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] mb-5 leading-loose">
+                <p className="text-sm text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] mb-5 leading-loose flex-grow">
                   From the Philadelphia Ganesh Festival to performing before
                   PM Narendra Modi — our global footprint spans 6 US cities
                   and 10+ prestigious national awards.
                 </p>
-                <Link href="/achievements" className="btn-outline text-[var(--accent-gold)] text-sm py-2.5 px-6">
+                <Link href="/achievements" className="btn-outline text-[var(--accent-gold)] text-sm py-2.5 px-6 self-start">
                   View Achievements
                 </Link>
               </div>
@@ -385,25 +393,47 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* WhatsApp QR */}
-          <div className="mt-10 text-center">
-            <p className="text-xs text-[var(--gold-light)]/40 mb-3 font-[family-name:var(--font-body)]">
-              Or scan to connect on WhatsApp
-            </p>
-            <a
-              href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white p-3 rounded-xl hover:shadow-lg hover:shadow-[var(--accent-gold)]/20 transition-shadow"
-            >
-              <Image
-                src="/images/whatsapp-qr.jpeg"
-                alt="WhatsApp QR Code"
-                width={120}
-                height={120}
-                className="rounded-lg"
-              />
-            </a>
+          {/* QR Codes */}
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
+            <div className="text-center">
+              <p className="text-xs text-[var(--gold-light)]/40 mb-3 font-[family-name:var(--font-body)]">
+                Scan to connect on WhatsApp
+              </p>
+              <a
+                href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white p-3 rounded-xl hover:shadow-lg hover:shadow-[var(--accent-gold)]/20 transition-shadow"
+              >
+                <Image
+                  src="/images/whatsapp-qr.jpeg"
+                  alt="WhatsApp QR Code"
+                  width={120}
+                  height={120}
+                  className="rounded-lg"
+                />
+              </a>
+            </div>
+
+            <div className="text-center">
+              <p className="text-xs text-[var(--gold-light)]/40 mb-3 font-[family-name:var(--font-body)]">
+                Scan to subscribe on YouTube
+              </p>
+              <a
+                href="https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white p-3 rounded-xl hover:shadow-lg hover:shadow-[var(--accent-gold)]/20 transition-shadow"
+              >
+                <Image
+                  src="/images/youtube-qr.jpeg"
+                  alt="YouTube QR Code"
+                  width={120}
+                  height={120}
+                  className="rounded-lg"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>

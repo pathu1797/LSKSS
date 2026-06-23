@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import {
   MapPin,
   Phone,
   Mail,
   Clock,
-  Send,
 } from "lucide-react";
 
 const courseOptions = [
@@ -43,23 +41,6 @@ const socialLinks = [
 ];
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    course: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for your inquiry! We will contact you soon.");
-  };
-
   return (
     <>
       <section className="bg-[var(--dark-brown)]">
@@ -85,111 +66,15 @@ export default function ContactPage() {
                 Fill in the form below and we will get back to you shortly.
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="contact-name"
-                    className="block text-xs font-medium text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-1.5"
-                  >
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="contact-name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 text-sm bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 rounded-sm text-[var(--text-espresso)] font-[family-name:var(--font-body)] focus:outline-none focus:border-[var(--primary-saffron)] transition-colors placeholder:text-[var(--text-espresso)]/30"
-                    placeholder="Your full name"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label
-                      htmlFor="contact-email"
-                      className="block text-xs font-medium text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-1.5"
-                    >
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="contact-email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 text-sm bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 rounded-sm text-[var(--text-espresso)] font-[family-name:var(--font-body)] focus:outline-none focus:border-[var(--primary-saffron)] transition-colors placeholder:text-[var(--text-espresso)]/30"
-                      placeholder="you@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="contact-phone"
-                      className="block text-xs font-medium text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-1.5"
-                    >
-                      Phone
-                    </label>
-                    <input
-                      type="tel"
-                      id="contact-phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 text-sm bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 rounded-sm text-[var(--text-espresso)] font-[family-name:var(--font-body)] focus:outline-none focus:border-[var(--primary-saffron)] transition-colors placeholder:text-[var(--text-espresso)]/30"
-                      placeholder="+91 XXXXXXXXXX"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="contact-course"
-                    className="block text-xs font-medium text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-1.5"
-                  >
-                    Course Interest
-                  </label>
-                  <select
-                    id="contact-course"
-                    name="course"
-                    value={formData.course}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 text-sm bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 rounded-sm text-[var(--text-espresso)] font-[family-name:var(--font-body)] focus:outline-none focus:border-[var(--primary-saffron)] transition-colors appearance-none cursor-pointer"
-                  >
-                    <option value="">Select a course...</option>
-                    {courseOptions.map((opt) => (
-                      <option key={opt} value={opt}>
-                        {opt}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="contact-message"
-                    className="block text-xs font-medium text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-1.5"
-                  >
-                    Message *
-                  </label>
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 text-sm bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/20 text-[var(--text-espresso)] font-[family-name:var(--font-body)] focus:outline-none focus:border-[var(--primary-saffron)] transition-colors resize-none placeholder:text-[var(--text-espresso)]/30"
-                    placeholder="Your inquiry or message..."
-                  />
-                </div>
-
-                <button type="submit" className="btn-saffron w-full sm:w-auto">
-                  <Send size={16} />
-                  Submit Inquiry
-                </button>
-              </form>
+              <div className="w-full relative">
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSccqOrVNzZd3de7X82AFvIPII2bjttpTouSoWaZhd_597bDmA/viewform?embedded=true" 
+                  className="w-full min-h-[850px] border-0 rounded-sm bg-transparent"
+                  title="Swarsandhya Sangeet Niketan Admission Form"
+                >
+                  Loading…
+                </iframe>
+              </div>
             </div>
 
             <div className="space-y-6">
@@ -314,6 +199,50 @@ export default function ContactPage() {
                     >
                       <Image src="/images/whatsapp.png" alt="" width={16} height={16} className="rounded-sm" />
                       Chat on WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* YouTube QR Code Card */}
+              <div className="card-institutional p-7">
+                <h3 className="text-lg font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
+                  YouTube वर सबस्क्राईब करा
+                </h3>
+                <span className="gold-divider mb-5" />
+                <div className="mt-5 flex items-center gap-5">
+                  <a
+                    href="https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 bg-white p-2.5 rounded-xl border border-[var(--accent-gold)]/20 hover:shadow-lg transition-shadow"
+                  >
+                    <Image
+                      src="/images/youtube-qr.jpeg"
+                      alt="YouTube QR Code — Scan to subscribe"
+                      width={120}
+                      height={120}
+                      className="rounded-lg"
+                    />
+                  </a>
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Image src="/images/youtube.png" alt="YouTube" width={24} height={24} className="rounded-sm" />
+                      <p className="text-sm font-bold text-[var(--text-espresso)] font-[family-name:var(--font-body)]">
+                        YouTube
+                      </p>
+                    </div>
+                    <p className="text-xs text-[var(--text-espresso)]/60 font-[family-name:var(--font-body)] leading-relaxed mb-3">
+                      Scan the QR code or click the button below to subscribe to our YouTube channel.
+                    </p>
+                    <a
+                      href="https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-xs font-semibold rounded-lg hover:bg-red-700 transition-colors"
+                    >
+                      <Image src="/images/youtube.png" alt="" width={16} height={16} className="rounded-sm" />
+                      Subscribe on YouTube
                     </a>
                   </div>
                 </div>

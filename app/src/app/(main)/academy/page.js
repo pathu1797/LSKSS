@@ -102,12 +102,15 @@ export default function AcademyPage() {
           </p>
           <span className="gold-divider-wide mx-auto mt-4" />
           <p className="text-[var(--gold-light)]/70 text-sm mt-5 font-[family-name:var(--font-body)] max-w-2xl mx-auto leading-relaxed">
-            Affiliated with the prestigious{" "}
+            Examinations in classical vocal and instrumental music will be conducted in affiliation with the curriculum of the{" "}
             <strong className="text-[var(--accent-gold)]">
               Akhil Bharatiya Gandharva Mahavidyalaya
-            </strong>{" "}
-            — providing formal classical musical education to folk artists since
-            its founding.
+            </strong>
+            . Additionally, classes for folk music and folk instruments will be held under the auspices of the{" "}
+            <strong className="text-[var(--accent-gold)]">
+              Loksanskruti Kala Seva Sangh
+            </strong>
+            .
           </p>
         </div>
       </section>

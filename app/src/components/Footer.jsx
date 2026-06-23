@@ -135,28 +135,53 @@ export default function Footer() {
               View All Courses →
             </Link>
 
-            {/* WhatsApp QR Code */}
-            <div className="mt-6 pt-5 border-t border-[var(--accent-gold)]/20">
-              <p className="text-xs font-semibold text-white mb-2">
-                WhatsApp वर संपर्क करा
-              </p>
-              <a
-                href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white p-2 rounded-lg hover:shadow-lg transition-shadow"
-              >
-                <Image
-                  src="/images/whatsapp-qr.jpeg"
-                  alt="WhatsApp QR Code — Scan to connect"
-                  width={100}
-                  height={100}
-                  className="rounded"
-                />
-              </a>
-              <p className="text-[10px] opacity-50 mt-1.5">
-                Scan to chat on WhatsApp
-              </p>
+            {/* QR Codes */}
+            <div className="mt-6 pt-5 border-t border-[var(--accent-gold)]/20 flex gap-4">
+              <div>
+                <p className="text-[11px] font-semibold text-white mb-2 truncate" title="WhatsApp वर संपर्क करा">
+                  WhatsApp
+                </p>
+                <a
+                  href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white p-2 rounded-lg hover:shadow-lg transition-shadow"
+                >
+                  <Image
+                    src="/images/whatsapp-qr.jpeg"
+                    alt="WhatsApp QR Code"
+                    width={80}
+                    height={80}
+                    className="rounded"
+                  />
+                </a>
+                <p className="text-[9px] opacity-50 mt-1.5">
+                  Scan to chat
+                </p>
+              </div>
+              
+              <div>
+                <p className="text-[11px] font-semibold text-white mb-2 truncate" title="YouTube वर सबस्क्राईब करा">
+                  YouTube
+                </p>
+                <a
+                  href="https://youtube.com/@pandurangshinde-swarsandhya?si=us5bA-vhwMhvip8n"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white p-2 rounded-lg hover:shadow-lg transition-shadow"
+                >
+                  <Image
+                    src="/images/youtube-qr.jpeg"
+                    alt="YouTube QR Code"
+                    width={80}
+                    height={80}
+                    className="rounded"
+                  />
+                </a>
+                <p className="text-[9px] opacity-50 mt-1.5">
+                  Scan to subscribe
+                </p>
+              </div>
             </div>
           </div>
 

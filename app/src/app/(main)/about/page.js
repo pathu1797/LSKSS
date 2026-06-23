@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Heart, Shield, Users, Images } from "lucide-react";
 
 export const metadata = {
@@ -77,14 +78,51 @@ export default function AboutPage() {
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-14 lg:py-18">
           <p className="text-base sm:text-lg text-[var(--text-espresso)] font-[family-name:var(--font-body)] leading-loose text-center max-w-3xl mx-auto">
-            Lok Sanskruti Kala Seva Sangh was established on August 15, 2022, in
-            Ahilyanagar (Ahmednagar) by Prof. Pandurang Uttam Shinde and Prof.
-            Haridas Shinde. The founders are <em>In the Gondhali Traditions</em> the 17th
-            descendants of Gondhali Agyandas, the legendary Shahir who served in
-            the court of Chhatrapati Shivaji Maharaj. Their mission: the
+            Lok Sanskruti Kala Seva Sangh was established on{" "}
+            <strong>August 15, 2022</strong>, in Ahilyanagar (Ahmednagar) by{" "}
+            <strong>Prof. Pandurang Uttam Shinde</strong> and{" "}
+            <strong>Prof. Haridas Shinde</strong>. The founders are{" "}
+            <strong>In the Gondhali Traditions</strong> the{" "}
+            <strong>17th descendants</strong> of Gondhali Agyandas, the legendary
+            Shahir who served in the court of{" "}
+            <strong>Chhatrapati Shivaji Maharaj</strong>. Their mission: the
             conservation, development, and global promotion of national folk art
             and culture.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-[var(--bg-parchment)] pt-8 pb-20">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-10">
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl group bg-[var(--parchment-dark)]">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 opacity-60"></div>
+              <Image 
+                src="/images/about-us/1.jpeg" 
+                alt="Lok Sanskruti Kala Seva Sangh - Founders" 
+                fill 
+                className="object-cover object-top filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+            </div>
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl group bg-[var(--parchment-dark)]">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 opacity-60"></div>
+              <Image 
+                src="/images/about-us/2.jpeg" 
+                alt="Lok Sanskruti Kala Seva Sangh - Performance" 
+                fill 
+                className="object-cover object-[center_15%] filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+            </div>
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl group bg-[var(--parchment-dark)]">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 opacity-60"></div>
+              <Image 
+                src="/images/about-us/3.jpeg" 
+                alt="Lok Sanskruti Kala Seva Sangh - Heritage" 
+                fill 
+                className="object-cover object-top filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -92,8 +130,10 @@ export default function AboutPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 pb-16 lg:pb-24">
           <div className="space-y-8 lg:space-y-0">
             {timelineEvents.map((event, i) => (
-              <div key={i} className="lg:grid lg:grid-cols-[1fr_60px_1fr] lg:gap-0 items-start">
-                <div className={`${event.side === "left" ? "block" : "hidden lg:block"} ${event.side === "right" ? "lg:invisible" : ""}`}>
+              <div key={i} className="relative lg:grid lg:grid-cols-[1fr_60px_1fr] lg:gap-0 items-start">
+                
+                {/* Left side */}
+                <div className={`${event.side === "left" ? "block z-10 relative" : "hidden lg:block pt-6"}`}>
                   {event.side === "left" && (
                     <div className="card-institutional p-6 sm:p-8 lg:mr-4 mb-8 lg:mb-12">
                       <span className="inline-block text-[10px] font-bold text-[var(--primary-saffron)] uppercase tracking-widest font-[family-name:var(--font-body)] mb-2">
@@ -105,19 +145,18 @@ export default function AboutPage() {
                       <p className="text-sm sm:text-base text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] leading-loose">
                         {event.description}
                       </p>
-                      <div className="mt-5 h-36 bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/10 rounded-sm flex items-center justify-center">
-                        <Images size={20} className="text-[var(--accent-gold)]/25" />
-                      </div>
                     </div>
                   )}
                 </div>
 
-                <div className="hidden lg:flex flex-col items-center">
-                  <div className="w-4 h-4 rounded-full bg-[var(--accent-gold)] border-3 border-[var(--bg-parchment)] z-10 flex-shrink-0 mt-8" />
+                {/* Center Timeline Axis */}
+                <div className="hidden lg:flex flex-col items-center z-10 relative">
+                  <div className="w-4 h-4 rounded-full bg-[var(--accent-gold)] border-3 border-[var(--bg-parchment)] flex-shrink-0 mt-8" />
                   <div className="w-0.5 bg-[var(--accent-gold)]/30 flex-1 min-h-[80px]" />
                 </div>
 
-                <div className={`${event.side === "right" ? "block" : "hidden lg:block"} ${event.side === "left" ? "lg:invisible" : ""}`}>
+                {/* Right side */}
+                <div className={`${event.side === "right" ? "block z-10 relative" : "hidden lg:block pt-6"}`}>
                   {event.side === "right" && (
                     <div className="card-institutional p-6 sm:p-8 lg:ml-4 mb-8 lg:mb-12">
                       <span className="inline-block text-[10px] font-bold text-[var(--primary-saffron)] uppercase tracking-widest font-[family-name:var(--font-body)] mb-2">
@@ -129,9 +168,6 @@ export default function AboutPage() {
                       <p className="text-sm sm:text-base text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] leading-loose">
                         {event.description}
                       </p>
-                      <div className="mt-5 h-36 bg-[var(--parchment-dark)] border border-[var(--accent-gold)]/10 rounded-sm flex items-center justify-center">
-                        <Images size={20} className="text-[var(--accent-gold)]/25" />
-                      </div>
                     </div>
                   )}
                 </div>

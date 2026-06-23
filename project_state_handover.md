@@ -1,6 +1,6 @@
 # Project State Handover — Loksanskruti Kala Seva Sangh
 
-> **Generated:** 2026-06-22 | **Status:** Frontend scaffold complete, CSS polished, splash screen uses real images (NEW.png, puroshottam-shinde.jpg). Other pages still use placeholders.
+> **Generated:** 2026-06-23 | **Status:** Frontend scaffold complete, CSS polished, splash screen and About Us page use real images. Other pages still use placeholders.
 > **Purpose:** Feed this entire file to a new AI agent so it can resume work with zero context loss.
 
 ---
@@ -288,6 +288,7 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [x] Splash screen with unified `NEW.png` header + centered portrait + Marathi biography
 - [x] Home page: hero, bento grid, about preview, events section
 - [x] About page: intro, grid-based alternating timeline, social impact cards
+- [x] About page photos: added founder/performance images to intro and 7 timeline element images with custom vibe styling
 - [x] Academy page: course grid, key features, CTA
 - [x] Achievements page: US tour, PM Modi section, awards & films
 - [x] Gallery page: filter bar + 50 masonry placeholders
