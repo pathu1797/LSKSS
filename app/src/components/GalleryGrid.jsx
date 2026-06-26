@@ -1,30 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
-const categories = ["All", "Performances", "Tours", "Academy", "Events", "Heritage"];
-
-/**
- * Returns a Tailwind aspect-ratio class based on index to create
- * an organic, staggered masonry look instead of a uniform grid.
- */
-const getAspectRatio = (index) => {
-  if (index % 5 === 0) return "aspect-[3/4]";   // Tall portrait
-  if (index % 3 === 0) return "aspect-square";   // Square
-  if (index % 2 === 0) return "aspect-[4/3]";    // Standard landscape
-  return "aspect-video";                          // Wide landscape (16/9)
-};
-
 export default function GalleryGrid({ initialImages }) {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(24);
   const [selectedIndex, setSelectedIndex] = useState(null);
 
-  /* ── filter logic ── */
-  const filtered =
-    activeFilter === "All"
-      ? initialImages
-      : initialImages.filter((img) => img.category === activeFilter);
+  /* ── Batch loading ── */
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 24);
+  };
 
   /* ── Lightbox navigation handlers ── */
   const closeModal = useCallback(() => setSelectedIndex(null), []);
@@ -33,20 +18,20 @@ export default function GalleryGrid({ initialImages }) {
     (e) => {
       e?.stopPropagation();
       setSelectedIndex((prev) =>
-        prev === 0 ? filtered.length - 1 : prev - 1
+        prev === 0 ? initialImages.length - 1 : prev - 1
       );
     },
-    [filtered.length]
+    [initialImages.length]
   );
 
   const showNext = useCallback(
     (e) => {
       e?.stopPropagation();
       setSelectedIndex((prev) =>
-        prev === filtered.length - 1 ? 0 : prev + 1
+        prev === initialImages.length - 1 ? 0 : prev + 1
       );
     },
-    [filtered.length]
+    [initialImages.length]
   );
 
   /* ── Keyboard navigation ── */
@@ -75,87 +60,55 @@ export default function GalleryGrid({ initialImages }) {
 
   return (
     <>
-      {/* ── Sticky filter bar ── */}
-      <section className="bg-[var(--bg-parchment)] border-b border-[var(--accent-gold)]/15 sticky top-[104px] z-20">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
-          <div className="flex items-center gap-4 overflow-x-auto py-4 scrollbar-none">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveFilter(cat)}
-                className={`
-                  flex-shrink-0 px-5 py-2.5 text-xs font-medium font-[family-name:var(--font-body)]
-                  transition-colors cursor-pointer rounded-sm
-                  ${
-                    activeFilter === cat
-                      ? "bg-[var(--primary-saffron)] text-white"
-                      : "bg-[var(--parchment-dark)] text-[var(--text-espresso)]/70 hover:bg-[var(--accent-gold)]/20 border border-[var(--accent-gold)]/15"
-                  }
-                `}
-              >
-                {cat}
-              </button>
-            ))}
-            <span className="ml-auto text-xs text-[var(--text-espresso)]/40 font-[family-name:var(--font-body)] flex-shrink-0 pl-4">
-              Showing {filtered.length} of {initialImages.length}
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Masonry grid ── */}
+      {/* ── Justified row gallery ── */}
       <section className="bg-[var(--bg-parchment)]">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-10 lg:py-14">
-
-          {/* ── Elegant sub-header with photo count ── */}
-          {initialImages.length > 0 && (
-            <div className="text-center mb-10">
-              <p className="text-sm text-[var(--text-espresso)] font-medium tracking-wide font-[family-name:var(--font-body)]">
-                Archive of{" "}
-                <span className="text-[var(--primary-saffron)]">
-                  {initialImages.length}
-                </span>{" "}
-                historical and performance moments
-              </p>
-              <div className="h-[2px] w-24 bg-[var(--accent-gold)] mx-auto mt-4 opacity-50" />
-            </div>
-          )}
-
-          {filtered.length === 0 ? (
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-10 lg:py-14 flex flex-col items-center">
+          {initialImages.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-sm text-[var(--text-espresso)]/50 font-[family-name:var(--font-body)]">
-                {initialImages.length === 0
-                  ? "No photos have been added yet. Drop images into the public/gallery/ folder to get started."
-                  : "No photos match the selected filter."}
+                No photos have been added yet. Drop images into the
+                public/gallery/ folder to get started.
               </p>
             </div>
           ) : (
-            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 w-full">
-              {filtered.map((img, idx) => (
-                <div
-                  key={img.src}
-                  onClick={() => setSelectedIndex(idx)}
-                  className={`gallery-frame relative w-full mb-6 break-inside-avoid overflow-hidden group cursor-pointer ${getAspectRatio(idx)}`}
+            <>
+              {/* Grid */}
+              <div className="flex flex-wrap gap-4 w-full after:content-[''] after:flex-grow-[10]">
+                {initialImages.slice(0, visibleCount).map((src, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => setSelectedIndex(idx)}
+                    className="gallery-frame relative h-[200px] sm:h-[250px] lg:h-[300px] min-w-[150px] sm:min-w-[200px] flex-grow overflow-hidden group rounded-sm cursor-pointer bg-[var(--parchment-dark)]"
+                  >
+                    <img
+                      src={src}
+                      alt={`Lok Sanskruti Kala Seva Sangh Gallery Image ${idx + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      draggable={false}
+                      onContextMenu={(e) => e.preventDefault()}
+                      className="w-full h-full block object-cover object-top transition-transform duration-700 group-hover:scale-105 select-none transform-gpu backface-hidden"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Load More Button */}
+              {visibleCount < initialImages.length && (
+                <button
+                  onClick={handleLoadMore}
+                  className="mt-12 px-8 py-3 rounded-sm text-[var(--accent-gold)] border border-[var(--accent-gold)] hover:bg-[var(--accent-gold)] hover:text-white transition-colors duration-300 font-[family-name:var(--font-body)] font-medium tracking-wide cursor-pointer"
                 >
-                  <Image
-                    src={img.src}
-                    alt={`Lok Sanskruti Kala Seva Sangh Gallery Image ${idx + 1}`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105 select-none"
-                    loading={idx < 8 ? "eager" : "lazy"}
-                    draggable={false}
-                    onContextMenu={(e) => e.preventDefault()}
-                  />
-                </div>
-              ))}
-            </div>
+                  Load More Photos
+                </button>
+              )}
+            </>
           )}
         </div>
       </section>
 
       {/* ── Lightbox Modal ── */}
-      {selectedIndex !== null && filtered[selectedIndex] && (
+      {selectedIndex !== null && initialImages[selectedIndex] && (
         <div
           className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
           onClick={closeModal}
@@ -183,13 +136,13 @@ export default function GalleryGrid({ initialImages }) {
             </svg>
           </button>
 
-          {/* Active image */}
+          {/* Active image — uses fill + object-contain for full uncropped view */}
           <div
             className="relative w-full max-w-5xl h-full max-h-[85vh] flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={filtered[selectedIndex].src}
+              src={initialImages[selectedIndex]}
               alt={`Lok Sanskruti Kala Seva Sangh Gallery Image ${selectedIndex + 1}`}
               draggable={false}
               onContextMenu={(e) => e.preventDefault()}
@@ -210,7 +163,7 @@ export default function GalleryGrid({ initialImages }) {
 
           {/* Photo counter */}
           <div className="absolute bottom-5 sm:bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs sm:text-sm tracking-[0.2em] font-mono select-none">
-            {selectedIndex + 1} / {filtered.length}
+            {selectedIndex + 1} / {initialImages.length}
           </div>
         </div>
       )}
