@@ -64,11 +64,14 @@ app/src/
 │       ├── about/page.js        ← /about (intro, timeline, social impact)
 │       ├── academy/page.js      ← /academy (courses, features, CTA)
 │       ├── achievements/page.js ← /achievements (US tour, PM Modi, awards, films)
-│       ├── gallery/page.js      ← /gallery (filter bar + 50 masonry placeholders)
+│       ├── gallery/page.js      ← /gallery (category filters + 242 real images)
 │       └── contact/page.js      ← /contact (inquiry form + contact details)
+├── data/
+│   └── galleryData.js           ← Auto-generated: 242 image entries with src/category/alt
 ├── components/
 │   ├── Header.jsx               ← Sticky header (top bar + nav + mobile drawer)
 │   ├── Footer.jsx               ← 4-column footer grid
+│   ├── GalleryGrid.jsx          ← Client component: filter tabs + masonry grid + lightbox
 │   ├── NewsMarquee.jsx          ← Scrolling news ticker
 │   └── StatsBanner.jsx          ← 4-stat icon row
 ```
@@ -77,12 +80,12 @@ app/src/
 
 | Route | Type | Special Rules |
 |---|---|---|
-| `/` | Splash Screen | Full-screen dark-brown page. Uses `NEW.png` — a single unified image containing the org logo, 3D Marathi name, and English subtitle. Below it: centered portrait of Purushottam Maharaj Shinde (`puroshottam-shinde.jpg`), Marathi biography in 2-column panel, "प्रवेश करा — Enter Website" CTA button linking to `/home`. NO Header/Footer. |
+| `/` | Splash Screen | Full-screen dark-brown page. Uses `S.png` — a single unified image containing the org logo, 3D Marathi name, and English subtitle. Below it: centered portrait of Purushottam Maharaj Shinde (`puroshottam-shinde.jpg`), Marathi biography in 2-column panel, PDF download button (संस्थेचे उद्दिष्ट), "प्रवेश करा — Enter Website" CTA button linking to `/home`. NO Header/Footer. |
 | `/home` | Main Landing | Hero banner, NewsMarquee, StatsBanner, Activities bento grid (Academy + Achievements + Gallery), About preview section, Events preview cards. |
 | `/about` | About Us | Intro paragraph, alternating timeline (grid-based `[1fr_60px_1fr]` with centered dots), Social Impact cards. |
 | `/academy` | Academy | Course grid, key features, class schedule CTA. Academy = Swarsandhya Sangeet Niketan. |
 | `/achievements` | Achievements | US Tour 2024 section, PM Modi performance highlight, Awards & Film Credits (dark theme section). |
-| `/gallery` | Gallery | `"use client"` page. Filter bar (All/Performances/Tours/Academy/Events/Heritage) with 50 programmatically generated placeholder items in masonry columns. **All images are placeholders — do not add real images.** |
+| `/gallery` | Gallery | Server component imports `galleryData.js` (242 real `.webp` images). Client `GalleryGrid` renders filter tabs (All/Concerts/Academy/Achievements/Philadelphia (US)), masonry grid with lazy loading, load-more pagination, and full lightbox with keyboard nav. |
 | `/contact` | Contact | Inquiry form (name, email, phone, course dropdown, message, submit) + contact details sidebar (addresses, phone numbers, email, map placeholder, social links). |
 
 ### Layout Structure
@@ -249,7 +252,8 @@ All reference content is in the `Information/` folder at the project root:
 
 | File | Usage |
 |---|---|
-| `NEW.png` | **Splash screen header** — unified image with org logo, 3D Marathi name, and English subtitle on dark brown background |
+| `S.png` | **Splash screen header** — unified image with org logo, 3D Marathi name, and English subtitle on dark brown background (replaced NEW.png) |
+| `NEW.png` | Legacy splash header image (replaced by S.png, kept for reference) |
 | `puroshottam-shinde.jpg` | Splash screen portrait of the spiritual father |
 | `logo.jpeg` | Org logo (used in Header component) |
 | `text-marathi.png` | Legacy 3D Marathi text (replaced by NEW.png on splash, kept for reference) |
@@ -258,6 +262,23 @@ All reference content is in the `Information/` folder at the project root:
 | `facebook.png` | Social media icon |
 | `whatsapp.png` | Social media icon |
 | `whatsapp-qr.jpeg` | WhatsApp QR code (contact page) |
+
+### Gallery Assets (`app/public/images/gallery/`)
+
+| Directory / File | Count | Category |
+|---|---|---|
+| `All (1-3).webp` | 3 | Uncategorized (shown in All) |
+| `Academy/Academy (1-46).webp` | 46 | Academy |
+| `Achievements/Achievements (1-38).webp` | 38 | Achievements |
+| `Concerts/Concert (1-55).webp` | 55 | Concerts |
+| `Philadelphia (US)/Philadelphia (1-100).webp` | 100 | Philadelphia (US) |
+| **Total** | **242** | |
+
+### Document Assets (`app/public/documents/`)
+
+| File | Usage |
+|---|---|
+| `sanskruti-uddisht.pdf` | **संस्थेचे उद्दिष्ट** — Organization objectives PDF, downloadable from splash screen |
 
 Source photographs are in `Photos To be used in Website/` at the project root.
 
@@ -285,19 +306,21 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [x] Footer with 4-column grid
 - [x] NewsMarquee with infinite scroll
 - [x] StatsBanner with 4 stats
-- [x] Splash screen with unified `NEW.png` header + centered portrait + Marathi biography
+- [x] Splash screen with unified `S.png` header (replaced NEW.png) + centered portrait + Marathi biography + PDF download button
 - [x] Home page: hero, bento grid, about preview, events section
 - [x] About page: intro, grid-based alternating timeline, social impact cards
 - [x] About page photos: added founder/performance images to intro and 7 timeline element images with custom vibe styling
 - [x] Academy page: course grid, key features, CTA
 - [x] Achievements page: US tour, PM Modi section, awards & films
-- [x] Gallery page: filter bar + 50 masonry placeholders
+- [x] Gallery page: 242 real `.webp` images with 5-category filter tabs (All/Concerts/Academy/Achievements/Philadelphia), masonry grid, lightbox, lazy loading
+- [x] Gallery data auto-generated via `migrate-gallery.js` into `src/data/galleryData.js`
 - [x] Contact page: inquiry form + contact details + map placeholder
 - [x] Global CSS refactor (spacing, gaps, padding, typography)
 - [x] Layout centering fix (max-w-[1400px], removed rogue reset)
 - [x] All comments stripped from source files
 - [x] Build verification passes on all 7 routes
-- [x] Splash screen header: replaced separate logo/text-marathi.png/English text with single NEW.png
+- [x] Splash screen header: replaced separate logo/text-marathi.png/English text with single NEW.png, later replaced with S.png
+- [x] Added संस्थेचे उद्दिष्ट PDF download button on splash screen (public/documents/sanskruti-uddisht.pdf)
 - [x] GitHub push to `origin/main` (https://github.com/pathu1797/LSKSS.git)
 
 ### 🔲 Remaining / Next Steps

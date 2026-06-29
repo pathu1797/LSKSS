@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 
 export const metadata = {
   title: "लोकसंस्कृती कला सेवा संघ | Welcome",
@@ -17,10 +17,10 @@ export default function SplashPage() {
         <div className="text-center mb-6">
           <div className="mx-auto max-w-[500px] sm:max-w-[600px] lg:max-w-[720px]">
             <Image
-              src="/images/NEW.png"
+              src="/images/S.png"
               alt="लोकसंस्कृती कला सेवा संघ — Lok Sanskruti Kala Seva Sangh, Ahilyanagar"
-              width={1564}
-              height={800}
+              width={1774}
+              height={722}
               className="w-full h-auto object-contain"
               priority
             />
@@ -156,6 +156,18 @@ export default function SplashPage() {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div className="text-center mt-8">
+          <a
+            href="/documents/sanskruti-uddisht.pdf"
+            download="संस्थेचे उद्दिष्ट.pdf"
+            className="inline-flex items-center gap-3 px-8 py-3.5 bg-[var(--dark-brown-deep)] border-2 border-[var(--accent-gold)]/40 rounded-sm text-[var(--gold-light)] font-[family-name:var(--font-body)] text-sm sm:text-base hover:bg-[var(--accent-gold)]/10 hover:border-[var(--accent-gold)] transition-all duration-300"
+          >
+            <Download size={18} className="text-[var(--primary-saffron)]" />
+            <span>संस्थेचे उद्दिष्ट डाउनलोड करा</span>
+            <span className="text-[var(--accent-gold)]/50 text-xs">(PDF)</span>
+          </a>
         </div>
 
         <div className="text-center mt-10 lg:mt-14">
