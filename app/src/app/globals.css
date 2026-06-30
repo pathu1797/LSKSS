@@ -77,6 +77,19 @@ h1, h2, h3, h4, h5, h6 {
   animation-play-state: paused;
 }
 
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-press-slider {
+  animation: slide-left 40s linear infinite;
+}
+
+.animate-press-slider:hover {
+  animation-play-state: paused;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

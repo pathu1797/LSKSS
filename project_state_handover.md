@@ -310,7 +310,12 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [x] About page: intro, grid-based alternating timeline, social impact cards
 - [x] About page photos: added founder/performance images to intro and 7 timeline element images with custom vibe styling
 - [x] Academy page: course grid, key features, CTA
-- [x] Achievements page: US tour, PM Modi section, awards & films
+- [x] Achievements page:
+  - Added Press & Media Coverage section with `<SpotlightCarousel />` (17 newspaper cutouts)
+  - Split Certificates section into dual `<SpotlightCarousel />` components for Pandurang Shinde (9 images) and Haridas Shinde (11 images) + downloadable PDFs
+  - Redesigned Harirang Concert — USA section with a 7-image Bento Box grid and Museum Frame aesthetic
+  - Redesigned PM Narendra Modi section with a 4-image dynamic mosaic grid, Document Frames, and text-safe poster cropping
+  - Retained dark theme Awards & Films lists
 - [x] Gallery page: 242 real `.webp` images with 5-category filter tabs (All/Concerts/Academy/Achievements/Philadelphia), masonry grid, lightbox, lazy loading
 - [x] Gallery data auto-generated via `migrate-gallery.js` into `src/data/galleryData.js`
 - [x] Contact page: inquiry form + contact details + map placeholder
