@@ -134,9 +134,7 @@ export default function ContactPage() {
                         <a href="tel:+919011548435" className="block text-xs text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] hover:text-[var(--primary-saffron)]">
                           +91 9011548435
                         </a>
-                        <a href="tel:+919322941949" className="block text-xs text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] hover:text-[var(--primary-saffron)]">
-                          +91 9322941949
-                        </a>
+
                       </div>
                     </div>
                   </li>

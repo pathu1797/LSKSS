@@ -261,7 +261,7 @@ export default function Footer() {
             © {new Date().getFullYear()} लोकसंस्कृती कला सेवा संघ. All rights reserved.
           </p>
           <p className="text-[10px] opacity-40">
-            Founded by Prof. Pandurang Uttam Shinde &amp; Prof. Haridas Shinde
+            Founded by Adv. Pandurang Uttam Shinde &amp; Prof. Haridas Shinde
           </p>
         </div>
       </div>

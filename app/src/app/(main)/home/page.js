@@ -301,7 +301,7 @@ export default function HomePage() {
               </h2>
               <p className="text-sm sm:text-base text-[var(--text-espresso)]/80 font-[family-name:var(--font-body)] leading-loose mb-5">
                 Established on August 15, 2022, in Ahilyanagar (Ahmednagar) by
-                Prof. Pandurang Uttam Shinde and Prof. Haridas Shinde, the Sangh
+                Adv. Pandurang Uttam Shinde and Prof. Haridas Shinde, the Sangh
                 is dedicated to the conservation, development, and global promotion
                 of national folk art and culture.
               </p>

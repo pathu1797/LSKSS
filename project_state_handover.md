@@ -290,7 +290,6 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 |---|---|
 | Phone 1 | +91 7020692252 |
 | Phone 2 | +91 9011548435 |
-| Phone 3 | +91 9322941949 |
 | Email | Loksanskruti.kalaseva.sangh@gmail.com |
 | Address (HQ) | मु. पो. केडगाव, उदयनराजे नगर, जिल्हा अहमदनगर - 414001 |
 | Address (Pune) | नेवाळे वस्ती, दत्त मंदीर, मांजरी खुर्द, ता. हवेली, जिल्हा पुणे |
