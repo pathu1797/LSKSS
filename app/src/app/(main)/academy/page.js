@@ -1,4 +1,6 @@
 import Link from "next/link";
+import GSAPTextReveal from "@/components/GSAPTextReveal";
+import GSAPBlockReveal from "@/components/GSAPBlockReveal";
 import {
   Mic,
   Music,
@@ -94,9 +96,9 @@ export default function AcademyPage() {
           <p className="text-[var(--accent-gold)] text-xs tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
             Education Wing
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-2">
+          <GSAPTextReveal as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-2">
             स्वरसंध्या संगीत निकेतन
-          </h1>
+          </GSAPTextReveal>
           <p className="text-[var(--gold-light)]/60 text-sm font-[family-name:var(--font-body)]">
             Swarsandhya Sangeet Niketan
           </p>
@@ -145,9 +147,9 @@ export default function AcademyPage() {
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-12 lg:py-20">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
-              Course Categories
-            </h2>
+            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
+              Programs &amp; Curriculum
+            </GSAPTextReveal>
             <p className="text-sm text-[var(--text-espresso)]/60 mt-2 font-[family-name:var(--font-body)]">
               आवड तुमची... मार्गदर्शन आमचे...
             </p>
@@ -202,9 +204,9 @@ export default function AcademyPage() {
 
       <section className="bg-[var(--parchment-dark)]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-14 lg:py-20 text-center">
-          <h2 className="text-2xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
-            Class Schedule &amp; Logistics
-          </h2>
+          <GSAPTextReveal as="h2" className="text-2xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
+            Admission Inquiry
+          </GSAPTextReveal>
           <span className="gold-divider mx-auto mb-6" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
             <div className="card-institutional p-6">

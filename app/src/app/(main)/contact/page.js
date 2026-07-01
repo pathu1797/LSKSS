@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import GSAPTextReveal from "@/components/GSAPTextReveal";
+import GSAPBlockReveal from "@/components/GSAPBlockReveal";
 import {
   MapPin,
   Phone,
@@ -48,9 +50,9 @@ export default function ContactPage() {
           <p className="text-[var(--accent-gold)] text-xs tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
             Admissions &amp; Inquiries
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+          <GSAPTextReveal as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
             Contact Us
-          </h1>
+          </GSAPTextReveal>
           <span className="gold-divider-wide mx-auto mt-4" />
         </div>
       </section>

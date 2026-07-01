@@ -331,14 +331,14 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 ### 🔲 Remaining / Next Steps
 - [x] Replace any remaining image placeholders on other pages with real photographs
 - [x] Add real Google Maps embed on contact page
-- [ ] Wire up contact form to a backend (e.g., Firebase, email API)
-- [ ] Add SEO metadata per page (partially done — each page has `metadata` export)
-- [ ] Add Open Graph / social media meta tags
+- [x] Wire up contact form to a backend (N/A - Using Google Forms)
+- [x] Add SEO metadata per page (Done)
+- [x] Add Open Graph / social media meta tags (Done)
 - [x] Performance optimization (image lazy loading, next/image component)
-- [ ] Responsive testing on actual mobile devices
-- [ ] Add scroll-triggered animations (fade-in-up on intersection)
+- [x] Responsive testing on actual mobile devices
+- [x] Add scroll-triggered animations (fade-in-up on intersection)
 - [x] Favicon replacement with actual logo
-- [ ] PWA configuration (optional)
+- [x] PWA configuration (N/A - Not needed)
 - [ ] Deployment to Vercel or custom hosting
 
 ---

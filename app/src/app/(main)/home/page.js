@@ -12,6 +12,8 @@ import {
 import NewsMarquee from "@/components/NewsMarquee";
 import StatsBanner from "@/components/StatsBanner";
 import AutoImageCarousel from "@/components/AutoImageCarousel";
+import GSAPTextReveal from "@/components/GSAPTextReveal";
+import GSAPBlockReveal from "@/components/GSAPBlockReveal";
 
 export const metadata = {
   title: "Home | लोकसंस्कृती कला सेवा संघ",
@@ -33,13 +35,13 @@ export default function HomePage() {
               <p className="text-[var(--accent-gold)] text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-body)] font-medium mb-4">
                 Since the Court of Chhatrapati Shivaji Maharaj
               </p>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] leading-tight mb-5">
+              <GSAPTextReveal as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] leading-tight mb-5">
                 In the Gondhali tradition 17th Generation Custodians
                 <br />
                 <span className="text-[var(--primary-saffron)]">
                   of Maharashtrian Folk Art
                 </span>
-              </h1>
+              </GSAPTextReveal>
               <p className="text-[var(--gold-light)]/70 text-sm sm:text-base max-w-xl leading-loose font-[family-name:var(--font-body)] mb-8">
                 Lok Sanskruti Kala Seva Sangh preserves, develops, and promotes
                 national folk art and culture globally — carrying forward the
@@ -87,9 +89,9 @@ export default function HomePage() {
             <p className="text-[var(--primary-saffron)] text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
               — Watch —
             </p>
-            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
-              Featured Performances
-            </h2>
+            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+              "कला हीच ईश्वर सेवा"
+            </GSAPTextReveal>
             <p className="text-sm text-[var(--gold-light)]/50 mt-3 font-[family-name:var(--font-body)] max-w-lg mx-auto">
               आरती ओवाळू मुळमाये रेणुके — साडेतीन शक्ती पिठाची पारंपारिक आरती
             </p>
@@ -321,9 +323,9 @@ export default function HomePage() {
                 About Us
               </p>
               <span className="gold-divider-wide mb-5" />
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mt-5 mb-5">
-                Welcome to Lok Sanskruti Kala Seva Sangh
-              </h2>
+              <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl lg:text-4xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mt-5 mb-5">
+                Pioneering Maharashtrian Folk Art in the USA
+              </GSAPTextReveal>
               <p className="text-sm sm:text-base text-[var(--text-espresso)]/80 font-[family-name:var(--font-body)] leading-loose mb-5">
                 Established on August 15, 2022, in Ahilyanagar (Ahmednagar) by
                 Adv. Pandurang Uttam Shinde and Prof. Haridas Shinde, the Sangh
@@ -353,9 +355,9 @@ export default function HomePage() {
               — Connect —
             </p>
             <span className="gold-divider mx-auto" />
-            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mt-4 mb-3">
-              Follow Us on Social Media
-            </h2>
+            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mt-4 mb-3">
+              Impacting Through Art
+            </GSAPTextReveal>
             <p className="text-sm text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] max-w-md mx-auto">
               Stay updated with performances, events, and cultural heritage stories
             </p>
@@ -471,9 +473,9 @@ export default function HomePage() {
               Events
             </p>
             <span className="gold-divider mx-auto" />
-            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mt-4">
-              Upcoming &amp; Recent
-            </h2>
+            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mt-4">
+              Upcoming &amp; Recent Events
+            </GSAPTextReveal>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

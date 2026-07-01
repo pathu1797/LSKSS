@@ -1,5 +1,7 @@
 import GalleryGrid from "@/components/GalleryGrid";
 import galleryData from "@/data/galleryData";
+import GSAPTextReveal from "@/components/GSAPTextReveal";
+import GSAPBlockReveal from "@/components/GSAPBlockReveal";
 
 export const metadata = {
   title: "Gallery | लोकसंस्कृती कला सेवा संघ",
@@ -17,9 +19,9 @@ export default function GalleryPage() {
           <p className="text-[var(--accent-gold)] text-xs tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
             Media Archive
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
-            Gallery
-          </h1>
+          <GSAPTextReveal as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+            Our Gallery
+          </GSAPTextReveal>
           <span className="gold-divider-wide mx-auto mt-4" />
         </div>
       </section>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { MapPin, Award, Film, Star, Images, Flag } from "lucide-react";
 import SpotlightCarousel from "@/components/SpotlightCarousel";
+import GSAPTextReveal from "@/components/GSAPTextReveal";
+import GSAPBlockReveal from "@/components/GSAPBlockReveal";
 
 export const metadata = {
   title: "Achievements | लोकसंस्कृती कला सेवा संघ",
@@ -46,9 +48,9 @@ export default function AchievementsPage() {
           <p className="text-[var(--accent-gold)] text-xs tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
             Global Footprint
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+          <GSAPTextReveal as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
             Achievements
-          </h1>
+          </GSAPTextReveal>
           <span className="gold-divider-wide mx-auto mt-4" />
         </div>
       </section>
@@ -59,9 +61,9 @@ export default function AchievementsPage() {
             <p className="text-[var(--primary-saffron)] text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
               International Tour 2024
             </p>
-            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
+            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
               Harirang Concert — USA
-            </h2>
+            </GSAPTextReveal>
             <span className="gold-divider md:mx-0 mx-auto mb-6" />
             <p className="text-sm sm:text-base text-[var(--text-espresso)]/80 font-[family-name:var(--font-body)] leading-loose mt-6 mb-5">
               In 2024, the Sangh took Maharashtrian folk music to the United
@@ -214,9 +216,9 @@ export default function AchievementsPage() {
       {/* Press & Media Coverage */}
       <section className="bg-[var(--bg-parchment)] border-t border-[var(--accent-gold)]/10 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24 text-center">
-          <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
+          <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
             Press &amp; Media Coverage
-          </h2>
+          </GSAPTextReveal>
           <span className="gold-divider mx-auto mt-4 mb-12" />
 
           <SpotlightCarousel images={pressImages} />
@@ -239,9 +241,9 @@ export default function AchievementsPage() {
       <section className="bg-[var(--parchment-dark)] py-20">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
+            <GSAPTextReveal as="h2" className="text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Certificates &amp; Official Recognitions
-            </h2>
+            </GSAPTextReveal>
             <span className="gold-divider mx-auto mt-4" />
           </div>
 
@@ -290,9 +292,9 @@ export default function AchievementsPage() {
             <p className="text-[var(--primary-saffron)] text-xs tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
               Prof. Haridas Shinde
             </p>
-            <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
-              Awards &amp; Cinematic Credits
-            </h2>
+            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+              State Level Awards
+            </GSAPTextReveal>
             <span className="gold-divider-wide mx-auto mt-4" />
           </div>
 
