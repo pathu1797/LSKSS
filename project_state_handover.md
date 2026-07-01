@@ -326,9 +326,10 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [x] Splash screen header: replaced separate logo/text-marathi.png/English text with single NEW.png, later replaced with S.png
 - [x] Added संस्थेचे उद्दिष्ट PDF download button on splash screen (public/documents/sanskruti-uddisht.pdf)
 - [x] GitHub push to `origin/main` (https://github.com/pathu1797/LSKSS.git)
+- [x] Replaced all Home Page image placeholders (Hero, Academy, Gallery grid, Events cards) with real photographs using Next.js `<Image>` and `AutoImageCarousel`.
 
 ### 🔲 Remaining / Next Steps
-- [ ] Replace remaining image placeholders with real photographs (user will provide)
+- [ ] Replace any remaining image placeholders on other pages with real photographs
 - [x] Add real Google Maps embed on contact page
 - [ ] Wire up contact form to a backend (e.g., Firebase, email API)
 - [ ] Add SEO metadata per page (partially done — each page has `metadata` export)
