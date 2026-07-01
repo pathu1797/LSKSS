@@ -96,7 +96,7 @@ export default function AcademyPage() {
           <p className="text-[var(--accent-gold)] text-xs tracking-[0.25em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
             Education Wing
           </p>
-          <GSAPTextReveal as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-2">
+          <GSAPTextReveal splitBy="words" as="h1" className="text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-2">
             स्वरसंध्या संगीत निकेतन
           </GSAPTextReveal>
           <p className="text-[var(--gold-light)]/60 text-sm font-[family-name:var(--font-body)]">

@@ -9,6 +9,7 @@ export default function GSAPTextReveal({
   children,
   as: Component = "div",
   className = "",
+  splitBy = "chars",
   ...props
 }) {
   const containerRef = useRef(null);
@@ -21,11 +22,15 @@ export default function GSAPTextReveal({
     const textElement = textRef.current;
     if (!container || !textElement) return;
 
-    // Split the text into words and characters to preserve word wrapping
-    const split = new SplitType(textElement, { types: "words, chars" });
+    // Determine split types based on the prop
+    const types = splitBy === "chars" ? "words, chars" : "words";
+    const split = new SplitType(textElement, { types });
 
-    // Ensure the characters are visible but translated down for the reveal
-    gsap.set(split.chars, {
+    // Target either chars or words for animation
+    const targets = splitBy === "chars" ? split.chars : split.words;
+
+    // Ensure the elements are visible but translated down for the reveal
+    gsap.set(targets, {
       y: 130,
       skewY: 5,
     });
@@ -40,7 +45,7 @@ export default function GSAPTextReveal({
     // Make container visible
     tl.set(container, { autoAlpha: 1 });
 
-    tl.to(split.chars, {
+    tl.to(targets, {
       y: 0,
       skewY: 0,
       stagger: 0.03,
@@ -52,7 +57,7 @@ export default function GSAPTextReveal({
       split.revert();
       tl.kill();
     };
-  }, []);
+  }, [splitBy]);
 
   return (
     <Component
@@ -66,3 +71,4 @@ export default function GSAPTextReveal({
     </Component>
   );
 }
+

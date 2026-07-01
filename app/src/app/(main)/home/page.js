@@ -89,7 +89,7 @@ export default function HomePage() {
             <p className="text-[var(--primary-saffron)] text-xs tracking-[0.2em] uppercase font-[family-name:var(--font-body)] font-medium mb-2">
               — Watch —
             </p>
-            <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
+            <GSAPTextReveal splitBy="words" as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)]">
               "कला हीच ईश्वर सेवा"
             </GSAPTextReveal>
             <p className="text-sm text-[var(--gold-light)]/50 mt-3 font-[family-name:var(--font-body)] max-w-lg mx-auto">
