@@ -481,24 +481,29 @@ export default function HomePage() {
                 title: "Harirang Concert Series",
                 desc: "Classical & folk music concerts showcasing Maharashtrian heritage traditions across venues nationwide.",
                 date: "Ongoing",
+                image: "/images/home/events/event-harirang.webp"
               },
               {
                 title: "Swarsandhya Admissions",
                 desc: "New batch admissions open for all classical music & folk art courses. Online and offline batches available.",
                 date: "Enrollment Open",
+                image: "/images/home/events/event-swarsandhya.jpg"
               },
               {
                 title: "Annual Cultural Festival",
                 desc: "Celebrating the rich traditions of Gondhali art & Warkari sampradaya with performances and workshops.",
                 date: "Coming Soon",
+                image: "/images/home/events/event-annual.webp"
               },
             ].map((event, i) => (
               <div key={i} className="card-institutional p-0 overflow-hidden">
-                <div className="h-48 bg-[var(--parchment-dark)] border-b border-[var(--accent-gold)]/10 flex items-center justify-center">
-                  <div className="text-center">
-                    <Calendar size={28} className="mx-auto text-[var(--accent-gold)]/25 mb-2" />
-                    <p className="text-[var(--accent-gold)]/25 text-[9px]">Event Photo</p>
-                  </div>
+                <div className="relative w-full h-56 md:h-64 overflow-hidden border-b border-[var(--accent-gold)]/20">
+                  <Image 
+                    src={event.image} 
+                    alt={event.title} 
+                    fill 
+                    className={`object-cover transition-transform duration-700 ease-out hover:scale-105 ${event.title === "Swarsandhya Admissions" ? "object-[center_top]" : ""}`}
+                  />
                 </div>
                 <div className="p-7">
                   <div className="flex items-center gap-2 mb-3">
