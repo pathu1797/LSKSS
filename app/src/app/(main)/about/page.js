@@ -3,7 +3,7 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import GSAPTextReveal from "@/components/GSAPTextReveal";
 import GSAPBlockReveal from "@/components/GSAPBlockReveal";
-import { Heart, Shield, Users, Images, Star, Award } from "lucide-react";
+import { Heart, Shield, Users, Images, Star, Award, Download } from "lucide-react";
 
 export const metadata = {
   title: "About Us | लोकसंस्कृती कला सेवा संघ",
@@ -552,6 +552,17 @@ export default function AboutPage() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-12 flex justify-center w-full">
+            <a 
+              href="/documents/lskss-more-information.pdf" 
+              download 
+              className="btn-saffron px-8 py-4 inline-flex items-center gap-3 font-inter font-semibold transition-transform duration-300 ease-out hover:-translate-y-1"
+            >
+              <Download size={20} />
+              Download More Information & Work (PDF)
+            </a>
           </div>
         </div>
       </section>

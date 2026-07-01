@@ -56,15 +56,19 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-              <div className="w-full aspect-[4/3] border-2 border-[var(--accent-gold)]/40 bg-[var(--parchment-dark)]/10 rounded-lg overflow-hidden flex items-center justify-center backdrop-blur-sm">
-                <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full border border-[var(--accent-gold)]/20 flex items-center justify-center">
-                    <Images size={32} className="text-[var(--accent-gold)]/50" />
-                  </div>
-                  <p className="text-[var(--accent-gold)]/50 text-xs font-[family-name:var(--font-body)]">
-                    Hero Image
-                  </p>
-                </div>
+              <div className="relative w-full aspect-[4/3] border-2 border-[var(--accent-gold)]/40 bg-[var(--parchment-dark)]/10 rounded-lg overflow-hidden">
+                <AutoImageCarousel 
+                  images={[
+                    "/images/home/hero/hero-logo.png",
+                    "/images/home/hero/hero-1.jpg",
+                    "/images/home/hero/hero-2.jpg",
+                    "/images/home/hero/hero-3.jpg",
+                    "/images/home/hero/hero-4.jpg",
+                    "/images/home/hero/hero-5.jpg",
+                    "/images/home/hero/hero-6.jpg"
+                  ]}
+                  altText="Lok Sanskruti Kala Seva Sangh - Hero"
+                />
               </div>
               <div className="absolute -bottom-2 -right-2 w-20 h-20 border-b-2 border-r-2 border-[var(--accent-gold)]/40 hidden lg:block" />
             </div>
@@ -184,23 +188,34 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="card-institutional p-0 overflow-hidden group">
-              <div className="h-52 bg-[var(--parchment-dark)] flex items-center justify-center">
-                <div className="text-center">
-                  <GraduationCap size={40} className="mx-auto text-[var(--accent-gold)]/30 mb-2" />
-                  <p className="text-[var(--accent-gold)]/40 text-[10px]">Image</p>
-                </div>
+            <div className="card-institutional p-0 overflow-hidden flex flex-col h-full group">
+              <div className="relative w-full h-[250px] sm:h-[300px]">
+                <AutoImageCarousel 
+                  images={[
+                    "/images/home/academy/academy-1.webp",
+                    "/images/home/academy/academy-2.webp",
+                    "/images/home/academy/academy-3.webp",
+                    "/images/home/academy/academy-4.webp",
+                    "/images/home/academy/academy-5.webp",
+                    "/images/home/academy/academy-6.webp",
+                    "/images/home/academy/academy-7.webp",
+                    "/images/home/academy/academy-8.webp",
+                    "/images/home/academy/academy-9.webp",
+                    "/images/home/academy/academy-10.webp"
+                  ]}
+                  altText="Lok Sanskruti Kala Seva Sangh Academy"
+                />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <h3 className="text-xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-3">
                   Academy
                 </h3>
-                <p className="text-sm text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] mb-5 leading-loose">
+                <p className="text-sm text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] mb-5 leading-loose flex-grow">
                   Swarsandhya Sangeet Niketan — formal classical music education
                   affiliated with Akhil Bharatiya Gandharva Mahavidyalaya. Courses in vocal,
                   instrumental, folk arts, and dance.
                 </p>
-                <Link href="/academy" className="btn-outline text-[var(--accent-gold)] text-sm py-2.5 px-6">
+                <Link href="/academy" className="btn-outline text-[var(--accent-gold)] text-sm py-2.5 px-6 self-start">
                   Explore Courses
                 </Link>
               </div>
@@ -238,15 +253,24 @@ export default function HomePage() {
             <div className="card-institutional p-0 overflow-hidden lg:col-span-2 group">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="grid grid-cols-3 gap-0">
-                  {[1, 2, 3, 4, 5, 6].map((n) => (
+                  {[
+                    "/images/home/gallery/home-gallery-1.jpg",
+                    "/images/home/gallery/home-gallery-2.jpeg",
+                    "/images/home/gallery/home-gallery-3.jpeg",
+                    "/images/home/gallery/home-gallery-4.jpeg",
+                    "/images/home/gallery/home-gallery-5.jpeg",
+                    "/images/home/gallery/home-gallery-6.jpeg"
+                  ].map((src, idx) => (
                     <div
-                      key={n}
-                      className="h-36 bg-[var(--parchment-dark)] flex items-center justify-center border-r border-b border-[var(--accent-gold)]/10"
+                      key={idx}
+                      className="relative w-full h-32 sm:h-40 lg:h-full min-h-[120px] overflow-hidden group border-r border-b border-[var(--accent-gold)]/20"
                     >
-                      <div className="text-center">
-                        <Images size={20} className="mx-auto text-[var(--accent-gold)]/25 mb-1" />
-                        <p className="text-[var(--accent-gold)]/25 text-[8px]">Photo {n}</p>
-                      </div>
+                      <Image
+                        src={src}
+                        alt={`Lok Sanskruti Gallery Highlight ${idx + 1}`}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      />
                     </div>
                   ))}
                 </div>
