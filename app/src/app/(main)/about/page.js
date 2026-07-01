@@ -104,6 +104,8 @@ export default function AboutPage() {
                 src="/images/about-us/1.jpeg" 
                 alt="Lok Sanskruti Kala Seva Sangh - Founders" 
                 fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority
                 className="object-cover object-top filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>
@@ -113,6 +115,8 @@ export default function AboutPage() {
                 src="/images/about-us/2.jpeg" 
                 alt="Lok Sanskruti Kala Seva Sangh - Performance" 
                 fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority
                 className="object-cover object-[center_15%] filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>
@@ -122,6 +126,8 @@ export default function AboutPage() {
                 src="/images/about-us/3.jpeg" 
                 alt="Lok Sanskruti Kala Seva Sangh - Heritage" 
                 fill 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority
                 className="object-cover object-top filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>
@@ -182,6 +188,7 @@ export default function AboutPage() {
                 src="/images/about/inspiration.jpg"
                 alt="वै. ह.भ.प. पुरुषोत्तम महाराज शिंदे (हातवळणकर)"
                 fill
+                sizes="192px"
                 className="object-cover object-top"
               />
             </div>
@@ -279,6 +286,7 @@ export default function AboutPage() {
                 src="/images/about/president.webp"
                 alt="Adv. Pandurang Uttam Shinde — President, Lok Sanskruti Kala Seva Sangh"
                 fill
+                sizes="192px"
                 className="object-cover object-top"
               />
             </div>
@@ -388,6 +396,7 @@ export default function AboutPage() {
                 src="/images/about/vice-president.webp"
                 alt="Haridas Uttam Shinde — Vice President, Lok Sanskruti Kala Seva Sangh"
                 fill
+                sizes="192px"
                 className="object-cover object-top"
               />
             </div>

@@ -334,7 +334,7 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [ ] Wire up contact form to a backend (e.g., Firebase, email API)
 - [ ] Add SEO metadata per page (partially done — each page has `metadata` export)
 - [ ] Add Open Graph / social media meta tags
-- [ ] Performance optimization (image lazy loading, next/image component)
+- [x] Performance optimization (image lazy loading, next/image component)
 - [ ] Responsive testing on actual mobile devices
 - [ ] Add scroll-triggered animations (fade-in-up on intersection)
 - [x] Favicon replacement with actual logo

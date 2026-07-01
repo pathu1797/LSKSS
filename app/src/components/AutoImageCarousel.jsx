@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-export default function AutoImageCarousel({ images, altText = "Carousel Image" }) {
+export default function AutoImageCarousel({ images, altText = "Carousel Image", sizes = "(max-width: 1024px) 100vw, 50vw" }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -34,6 +34,7 @@ export default function AutoImageCarousel({ images, altText = "Carousel Image" }
             src={src}
             alt=""
             fill
+            sizes={sizes}
             className="object-cover blur-xl opacity-40 scale-110"
             priority={index === 0}
           />
@@ -42,6 +43,7 @@ export default function AutoImageCarousel({ images, altText = "Carousel Image" }
             src={src}
             alt={`${altText} ${index + 1}`}
             fill
+            sizes={sizes}
             className="object-contain drop-shadow-2xl"
             priority={index === 0}
           />

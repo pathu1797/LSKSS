@@ -269,6 +269,7 @@ export default function HomePage() {
                         src={src}
                         alt={`Lok Sanskruti Gallery Highlight ${idx + 1}`}
                         fill
+                        sizes="(max-width: 768px) 33vw, 16vw"
                         className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                       />
                     </div>
@@ -502,6 +503,7 @@ export default function HomePage() {
                     src={event.image} 
                     alt={event.title} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className={`object-cover transition-transform duration-700 ease-out hover:scale-105 ${event.title === "Swarsandhya Admissions" ? "object-[center_top]" : ""}`}
                   />
                 </div>
