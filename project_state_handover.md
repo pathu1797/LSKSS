@@ -337,7 +337,7 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [ ] Performance optimization (image lazy loading, next/image component)
 - [ ] Responsive testing on actual mobile devices
 - [ ] Add scroll-triggered animations (fade-in-up on intersection)
-- [ ] Favicon replacement with actual logo
+- [x] Favicon replacement with actual logo
 - [ ] PWA configuration (optional)
 - [ ] Deployment to Vercel or custom hosting
 
