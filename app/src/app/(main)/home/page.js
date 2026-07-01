@@ -252,7 +252,7 @@ export default function HomePage() {
 
             <div className="card-institutional p-0 overflow-hidden lg:col-span-2 group">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="grid grid-cols-3 gap-0">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-0">
                   {[
                     "/images/home/gallery/home-gallery-1.jpg",
                     "/images/home/gallery/home-gallery-2.jpeg",

@@ -159,7 +159,7 @@ export default function AboutPage() {
               {timelineEvents.map((event, i) => (
                 <GSAPBlockReveal key={i}>
                   <div className="pb-16 border-b border-[var(--accent-gold)]/20 mb-16 last:border-0 last:mb-0 last:pb-0">
-                    <h3 className="text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--dark-brown)] mb-4">
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--dark-brown)] mb-4">
                       {event.era}
                     </h3>
                     <h4 className="text-2xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">

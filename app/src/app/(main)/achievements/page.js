@@ -177,30 +177,30 @@ export default function AchievementsPage() {
                   a new generation of folk artists.
                 </p>
               </div>
-              <div className="grid grid-cols-4 grid-rows-2 gap-4 w-full h-full min-h-[450px] p-6 lg:p-0 lg:py-10 lg:pr-10">
+              <div className="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 w-full h-full min-h-[450px] p-6 lg:p-0 lg:py-10 lg:pr-10">
                 {/* Photo T1 (Primary) */}
-                <div className="col-span-2 row-span-2 relative w-full h-full bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
+                <div className="col-span-2 lg:row-span-2 relative w-full h-full min-h-[250px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t1.jpeg" alt="PM Modi Event Primary" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
                 </div>
                 
                 {/* Photo T2 (Secondary Highlight) */}
-                <div className="col-span-2 row-span-1 relative w-full h-full bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
+                <div className="col-span-2 lg:row-span-1 relative w-full h-full min-h-[200px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t2.jpeg" alt="PM Modi Event Secondary" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
                 </div>
                 
                 {/* Photo T3 (Supporting) */}
-                <div className="col-span-1 row-span-1 relative w-full h-full bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
+                <div className="col-span-1 lg:row-span-1 relative w-full h-full min-h-[150px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t3.jpeg" alt="PM Modi Event Supporting 1" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
                 </div>
 
                 {/* Photo T4 (Supporting) */}
-                <div className="col-span-1 row-span-1 relative w-full h-full bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
+                <div className="col-span-1 lg:row-span-1 relative w-full h-full min-h-[150px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t4.jpeg" alt="PM Modi Event Supporting 2" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
@@ -239,7 +239,7 @@ export default function AchievementsPage() {
       <section className="bg-[var(--parchment-dark)] py-20">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Certificates &amp; Official Recognitions
             </h2>
             <span className="gold-divider mx-auto mt-4" />
