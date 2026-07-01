@@ -1,46 +1,173 @@
-# AI Agent Context: Lok Sanskruti Kala Seva Sangh (LKSS)
+# COMPREHENSIVE AI SYSTEM CONTEXT: Lok Sanskruti Kala Seva Sangh (LKSS)
 
-> **Purpose:** This file is designed to be read by an AI coding assistant. It contains the complete architectural, stylistic, and technical context of the project. Read this before making any modifications to the codebase.
+> **CRITICAL DIRECTIVE FOR ALL FUTURE AI AGENTS:** 
+> Do **NOT** rely on standard web-dev assumptions for this project. This is a highly specific Next.js 16 (App Router) + Tailwind v4 project with a rigid design system. Read this entire document carefully to understand the exact component interfaces, architectural rules, and "gotchas" before generating any code.
 
-## 1. Project Overview & Identity
-- **Organization:** Lok Sanskruti Kala Seva Sangh
-- **Mission:** Conservation, development, and global promotion of Maharashtrian folk art and culture. The founders are 17th-generation descendants of Gondhali Agyandas (Shahir of Chhatrapati Shivaji Maharaj).
-- **Academy Wing:** Swarsandhya Sangeet Niketan.
-- **Vibe Mandate:** Prestigious, historical, institutional. Earthy palette (browns, gold, parchment). **NO modern tech-startup UI** (no neon, no glassmorphism, no heavily rounded corners—max 4px radius `rounded-sm`).
+---
 
-## 2. Tech Stack
-- **Framework:** Next.js (App Router) v16.2.9
-- **React:** v19.2.4
-- **Styling:** Tailwind CSS v4 (uses `@import "tailwindcss"` in `globals.css`)
-- **Animation:** GSAP (ScrollTrigger) & `split-type`
-- **Icons:** `lucide-react`
-- **Fonts:** Playfair Display (Headings), Inter (Body) via `next/font/google`.
+## 1. ORGANIZATIONAL LORE & IDENTITY
+The Lok Sanskruti Kala Seva Sangh (LKSS) is not a modern startup; it is a prestigious cultural trust dedicated to the preservation of Maharashtrian folk art (specifically the *Gondhali* tradition). 
 
-## 3. Architecture & Routing
-The frontend is a fully responsive 7-route application.
-- `/` : Splash Screen. No header/footer. Dark mode. Contains `S.png` (Unified Logo + Text), Founder Portrait, Marathi Bio, and PDF Download.
-- `/home` : Main Landing. Hero, NewsMarquee, Stats, Bento grids.
-- `/about` : Organization History. Includes a grid-based alternating timeline.
-- `/academy` : Course offerings for Swarsandhya Sangeet Niketan.
-- `/achievements` : Awards, US Tour highlights, PM Modi performance, press coverage.
-- `/gallery` : Masonry image grid with category filters, loading 242 `.webp` images from `src/data/galleryData.js`.
-- `/contact` : Contact info, embedded Google Maps, embedded Google Form.
+*   **Establishment:** August 15, 2022, Ahilyanagar (Ahmednagar).
+*   **Registration:** महा .३६७/२०२२ एफ - २४१२६
+*   **Founders:** Prof. Pandurang Uttam Shinde & Prof. Haridas Shinde.
+*   **Lineage:** They are the 17th-generation descendants of Gondhali Agyandas (the legendary Shahir in Chhatrapati Shivaji Maharaj's court).
+*   **Spiritual Anchor:** Late H.B.P. Purushottam Maharaj Shinde (Hatwalankar).
+*   **Academy Branch:** Swarsandhya Sangeet Niketan (affiliated with Akhil Bharatiya Gandharva Mahavidyalaya Mandal).
 
-### Key Components (`app/src/components/`)
-- **GSAPTextReveal / GSAPBlockReveal:** Used for scroll-triggered entry animations. **CRITICAL:** `GSAPTextReveal` accepts a `splitBy="words"` prop which MUST be used for Marathi/Devanagari text to prevent rendering breakages caused by character splitting.
-- **AutoImageCarousel / SpotlightCarousel:** Used to cycle through images beautifully with crossfades.
-- **ScrollToTop:** Global floating action button (injected via `layout.js`).
+**Brand Aesthetic & Vibe Mandate:**
+The design *must* reflect age, prestige, and cultural depth. 
+*   **DO NOT USE:** Bubbly borders (`rounded-xl`, `rounded-full`), glassmorphism, neon colors, modern vector illustrations, or heavy drop-shadows.
+*   **MUST USE:** Sharp borders or `rounded-sm` (4px), museum-style layout grids, overlapping image/text boxes, and high-contrast typography (gold on brown, espresso on parchment).
 
-## 4. CSS Rules & Layout Gotchas (DO NOT BREAK THESE)
-1. **Container Centering:** Every main section wrapper uses `max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16`. Never use `max-w-7xl` or float alignments to center blocks.
-2. **NO CSS RESETS:** Do NOT add `* { margin: 0; padding: 0; box-sizing: border-box; }` to `globals.css`. Tailwind v4's Preflight handles it. A manual reset breaks `mx-auto` centering.
-3. **Typography:** Body text must have `leading-loose` (line-height ~2) for readability of both English and Marathi.
-4. **Contrast:** Placeholders or borders on the `--dark-brown` background must use `--parchment-dark` or `--gold-light` to remain visible.
+---
 
-## 5. Security & Configuration
-- **next.config.mjs:** Contains strict HTTP Security Headers.
-- **CSP (Content-Security-Policy):** Highly restrictive. `frame-src` explicitly allows `https://docs.google.com`, `https://www.google.com`, `https://maps.google.com`, and `https://maps.googleapis.com` to prevent the Contact page Google Form and Google Map from breaking. Do not modify CSP without verifying these embeds.
+## 2. ARCHITECTURE & FILE TREE (Next.js App Router)
+This project uses Next.js 16 with the App Router (`app/` directory).
 
-## 6. Current State
-- The UI/UX, animations, assets, SEO, responsive refactoring, and security headers are **100% complete**. 
-- Project is ready for Production Deployment (e.g., Vercel).
+```text
+c:/Users/Prathamesh/Documents/QUANTISE/LKSS/
+├── app/
+│   ├── next.config.mjs          ← Security headers (CSP, X-Frame-Options)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── layout.js        ← Root html/body. Injects fonts and <ScrollToTop />
+│   │   │   ├── globals.css      ← The master Design System (Tailwind v4 @theme inline)
+│   │   │   ├── page.js          ← The Splash Screen (Route: `/`). Independent from main layout.
+│   │   │   └── (main)/
+│   │   │       ├── layout.js    ← Wraps the <Header>, <main>, and <Footer> for inner pages.
+│   │   │       ├── home/        ← Route: `/home`
+│   │   │       ├── about/       ← Route: `/about`
+│   │   │       ├── academy/     ← Route: `/academy`
+│   │   │       ├── achievements/← Route: `/achievements`
+│   │   │       ├── gallery/     ← Route: `/gallery`
+│   │   │       └── contact/     ← Route: `/contact`
+│   │   ├── components/          ← ALL reusable UI components
+│   │   │   ├── AutoImageCarousel.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── GalleryGrid.jsx
+│   │   │   ├── GSAPBlockReveal.jsx
+│   │   │   ├── GSAPTextReveal.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── NewsMarquee.jsx
+│   │   │   ├── ScrollToTop.jsx
+│   │   │   ├── SpotlightCarousel.jsx
+│   │   │   └── StatsBanner.jsx
+│   │   └── data/
+│   │       └── galleryData.js   ← Array of 242 photo objects auto-generated by scripts.
+│   └── public/                  ← Static assets (images, documents, favicons).
+├── Information/                 ← Raw text files containing client lore and data.
+└── Photos To be used in Website/← Raw photo dumps from the client.
+```
+
+---
+
+## 3. STRICT CSS & LAYOUT RULES (TAILWIND v4)
+This project uses **Tailwind v4**. It relies on `@import "tailwindcss"` rather than the old `@tailwind` directives.
+
+### 3.1 Custom Theme Tokens (Registered in `globals.css`)
+Do not use generic hex codes. Use these CSS variables and their exact Tailwind class equivalents:
+*   `--bg-parchment` (`bg-[var(--bg-parchment)]`) - Base background for light sections.
+*   `--dark-brown` (`bg-[var(--dark-brown)]`) - Base background for dark sections.
+*   `--dark-brown-deep` (`bg-[var(--dark-brown-deep)]`) - Nested dark elements.
+*   `--primary-saffron` (`text-[var(--primary-saffron)]`) - CTAs, active states, highlights.
+*   `--accent-gold` (`border-[var(--accent-gold)]`) - Dividers, borders, subtle text.
+*   `--text-espresso` (`text-[var(--text-espresso)]`) - Standard body text on light backgrounds.
+*   `--gold-light` (`text-[var(--gold-light)]`) - Standard body/heading text on dark backgrounds.
+*   `--parchment-dark` (`bg-[var(--parchment-dark)]`) - Input fields, light card backgrounds.
+
+### 3.2 The Centering Mandate (CRITICAL)
+**Never use generic flex centering for main page wrappers.**
+Every single full-width `<section>` must contain an inner `<div>` wrapper formatted exactly like this:
+```jsx
+<section className="w-full bg-[var(--bg-parchment)]">
+  <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-14">
+    {/* Content goes here */}
+  </div>
+</section>
+```
+*Why?* `max-w-[1400px]` ensures the site doesn't stretch infinitely on 4K monitors, while `mx-auto` centers it perfectly. The scaling `px-*` classes ensure safe zones on mobile, tablet, and desktop.
+
+### 3.3 DO NOT ADD A CSS RESET
+Do NOT add `* { margin: 0; box-sizing: border-box; }` to `globals.css`. Tailwind's preflight handles this. Adding a manual wildcard reset breaks `mx-auto` in Tailwind v4 and destroys the entire site layout.
+
+### 3.4 Image Contrast Rules
+When using placeholder divs or borders on `--dark-brown` backgrounds, they **must** have contrast. Use `bg-[var(--parchment-dark)]/10` and `border-[var(--accent-gold)]/40`. Never use `bg-[var(--dark-brown-deep)]` as a placeholder because it is invisible against `--dark-brown`.
+
+---
+
+## 4. COMPONENT APIs & USAGE
+
+### `GSAPTextReveal` & `GSAPBlockReveal`
+These components use GSAP ScrollTrigger to fade elements upward as they enter the viewport.
+*   **Props (`GSAPTextReveal`):** `as` (html tag like 'h1', 'p'), `className`, `children`, `splitBy`.
+*   **CRITICAL DEVANAGARI RULE:** When wrapping Marathi/Devanagari text in `GSAPTextReveal`, you **MUST** pass `splitBy="words"`. If you do not, the underlying `split-type` library will split by characters, destroying complex Marathi ligatures and matras.
+
+### `AutoImageCarousel`
+Used for inline cross-fading slideshows (e.g., hero banners, about previews).
+*   **Props:** `images` (array of objects: `{ src, alt }`), `interval` (number in ms), `className` (wrapper classes), `imageClassName` (Next `<Image>` classes).
+
+### `SpotlightCarousel`
+Used for displaying documents, certificates, and newspaper clippings. It renders a row of items and opens a full-screen Lightbox when clicked.
+*   **Props:** `items` (array: `{ id, src, alt, title, subtitle }`), `title`, `description`.
+
+### `GalleryGrid`
+Client-side masonry grid powering the `/gallery` page.
+*   **Logic:** Reads from `src/data/galleryData.js`. Implements 5-category filtering, lazy loading, and a full-screen Lightbox with keyboard navigation.
+
+---
+
+## 5. ROUTE BY ROUTE BREAKDOWN
+
+### `/` (Splash Screen)
+*   **Layout:** Bypass `(main)/layout.js`. Has no header and no footer.
+*   **Content:** Renders `S.png` (a baked image containing the logo, 3D text, and English subtitle). Below it is a portrait of the spiritual father and his biography in a two-column layout.
+*   **Interactivity:** A PDF download button for "संस्थेचे उद्दिष्ट" and a CTA to enter `/home`.
+
+### `/home` (Main Dashboard)
+*   **Hero:** AutoImageCarousel cross-fading real concert photos.
+*   **NewsMarquee:** Infinite scrolling gold bar.
+*   **StatsBanner:** 4 key metrics using Lucide icons.
+*   **Bento Grid:** CSS grid layout showcasing quick links to Academy, Gallery, and Achievements.
+
+### `/about` (History & Organization)
+*   **Timeline:** Uses a 3-column CSS grid (`grid-cols-[1fr_60px_1fr]`) to create an alternating vertical timeline of the organization's history.
+*   **Social Impact:** A 3-column grid of institutional cards detailing their cultural missions.
+
+### `/academy` (Swarsandhya Sangeet Niketan)
+*   **Content:** Details the music classes offered (Harmonium, Vocals, Tabla, etc.).
+*   **UI:** Uses a strict card grid and a prominent CTA linking to the contact page.
+
+### `/achievements` (Tours & Awards)
+*   **Museum UI:** Uses a dense mosaic grid for the "Harirang Concert - USA" and the "PM Narendra Modi Event" sections. Uses `aspect-square` and `aspect-video` combinations.
+*   **Document Display:** Uses `SpotlightCarousel` for rendering arrays of press cutouts and certificates.
+
+### `/gallery` (Media Hub)
+*   **Data:** 242 WebP images categorized into Concerts, Academy, Achievements, and Philadelphia.
+*   **Performance:** Uses `<Image>` lazy loading and paginates the render to prevent DOM overload.
+
+### `/contact` (Inquiries)
+*   **Form:** A comprehensive Google Form embed.
+*   **Map:** A Google Maps embed showing the Ahilyanagar HQ.
+*   **Sidebar:** Hardcoded phone numbers, emails, and physical addresses.
+
+---
+
+## 6. SECURITY & DEPLOYMENT
+
+### Next.js Configuration (`next.config.mjs`)
+The `headers()` function applies strict HTTP security:
+1.  **Strict-Transport-Security (HSTS):** Enforces HTTPS.
+2.  **X-Frame-Options:** `SAMEORIGIN`.
+3.  **X-Content-Type-Options:** `nosniff`.
+4.  **Permissions-Policy:** Disables camera, microphone, and geolocation.
+5.  **Content-Security-Policy (CSP):** Highly restrictive.
+    *   *WARNING:* The `frame-src` directive explicitly allows `'self'`, `https://docs.google.com`, `https://www.google.com`, `https://maps.google.com`, and `https://maps.googleapis.com`. If you remove these, the Contact page map and form will instantly break.
+
+### Data Migrations
+If the client adds new images to the `public/images/gallery/` folder in the future, you must run the local Node script `node scripts/migrate-gallery.js` to automatically parse the directories and rewrite `src/data/galleryData.js`. 
+
+### Production Readiness
+*   **SEO:** All pages export a `metadata` object with Open Graph tags.
+*   **Favicons:** `icon.png`, `apple-icon.png`, and `opengraph-image.png` are correctly placed in the `app/` root.
+*   **Next Steps:** Ready for deployment via Vercel. `npm run build` succeeds with zero errors. No client-side environment variables (`NEXT_PUBLIC_`) exist, so no keys need to be configured on the host.
