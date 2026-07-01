@@ -256,13 +256,24 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-[var(--accent-gold)]/20">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[10px] opacity-60 text-center sm:text-left">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+          <p className="text-[10px] opacity-60">
             © {new Date().getFullYear()} लोकसंस्कृती कला सेवा संघ. All rights reserved.
           </p>
           <p className="text-[10px] opacity-40">
             Founded by Adv. Pandurang Uttam Shinde &amp; Prof. Haridas Shinde
           </p>
+          <div className="text-[10px] sm:text-xs text-[var(--gold-light)]/60 transition-colors duration-300">
+            Designed & Managed by{" "}
+            <Link 
+              href="https://quantise.in" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-bold text-[var(--gold-light)]/80 hover:text-[var(--primary-saffron)] transition-colors"
+            >
+              Quantise
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
