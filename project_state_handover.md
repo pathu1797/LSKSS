@@ -329,7 +329,7 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [x] Replaced all Home Page image placeholders (Hero, Academy, Gallery grid, Events cards) with real photographs using Next.js `<Image>` and `AutoImageCarousel`.
 
 ### 🔲 Remaining / Next Steps
-- [ ] Replace any remaining image placeholders on other pages with real photographs
+- [x] Replace any remaining image placeholders on other pages with real photographs
 - [x] Add real Google Maps embed on contact page
 - [ ] Wire up contact form to a backend (e.g., Firebase, email API)
 - [ ] Add SEO metadata per page (partially done — each page has `metadata` export)
