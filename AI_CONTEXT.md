@@ -1,4 +1,4 @@
-# COMPREHENSIVE AI SYSTEM CONTEXT: Lok Sanskruti Kala Seva Sangh (LKSS)
+# COMPREHENSIVE AI SYSTEM CONTEXT: Lok Sanskruti Kala Seva Sangh (LSKSS)
 
 > **CRITICAL DIRECTIVE FOR ALL FUTURE AI AGENTS:** 
 > Do **NOT** rely on standard web-dev assumptions for this project. This is a highly specific Next.js 16 (App Router) + Tailwind v4 project with a rigid design system. Read this entire document carefully to understand the exact component interfaces, architectural rules, and "gotchas" before generating any code.
