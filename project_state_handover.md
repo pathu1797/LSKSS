@@ -327,6 +327,10 @@ Source photographs are in `Photos To be used in Website/` at the project root.
 - [x] Added संस्थेचे उद्दिष्ट PDF download button on splash screen (public/documents/sanskruti-uddisht.pdf)
 - [x] GitHub push to `origin/main` (https://github.com/pathu1797/LSKSS.git)
 - [x] Replaced all Home Page image placeholders (Hero, Academy, Gallery grid, Events cards) with real photographs using Next.js `<Image>` and `AutoImageCarousel`.
+- [x] Added Vercel Analytics (`@vercel/analytics/next`) to the root layout.
+- [x] Cleaned up and renamed all PDF downloads to URL-friendly formats (converted .docx to .pdf).
+- [x] Added `DonationBanner` component on the Home page with a link to payment details PDF.
+- [x] Uploaded new "Additional Images" to the gallery and updated the Home page and Academy page galleries.
 
 ### 🔲 Remaining / Next Steps
 - [x] Replace any remaining image placeholders on other pages with real photographs

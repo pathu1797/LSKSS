@@ -115,6 +115,11 @@ Used for displaying documents, certificates, and newspaper clippings. It renders
 Client-side masonry grid powering the `/gallery` page.
 *   **Logic:** Reads from `src/data/galleryData.js`. Implements 5-category filtering, lazy loading, and a full-screen Lightbox with keyboard navigation.
 
+### `DonationBanner`
+A dedicated section calling for donations to preserve Maharashtrian Folk Art.
+*   **Usage:** Placed on `/home` (and potentially `/about`).
+*   **Gotchas:** It contains Marathi text. Must use standard HTML text elements (`<h2>`, `<p>`) for Devanagari script; do NOT wrap the Marathi text in `GSAPTextReveal` or it will split the characters and break the *matras* (ligatures).
+
 ---
 
 ## 5. ROUTE BY ROUTE BREAKDOWN
@@ -169,5 +174,6 @@ If the client adds new images to the `public/images/gallery/` folder in the futu
 
 ### Production Readiness
 *   **SEO:** All pages export a `metadata` object with Open Graph tags.
+*   **Analytics:** `@vercel/analytics/next` is installed and injected via the root layout.
 *   **Favicons:** `icon.png`, `apple-icon.png`, and `opengraph-image.png` are correctly placed in the `app/` root.
 *   **Next Steps:** Ready for deployment via Vercel. `npm run build` succeeds with zero errors. No client-side environment variables (`NEXT_PUBLIC_`) exist, so no keys need to be configured on the host.

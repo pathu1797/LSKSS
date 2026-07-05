@@ -313,7 +313,7 @@ export default function AboutPage() {
                   Education &amp; Credentials
                 </h4>
                 <ul className="list-disc pl-6 space-y-4 mb-6 text-lg">
-                  <li><strong>M.COM, DTL, PASAA</strong></li>
+                  <li><strong>MCOM, LLB, DTL</strong></li>
                   <li>Sangit Visharad — Akhil Bhartiya Gandharva Mahavidyalaya</li>
                 </ul>
               </ScrollReveal>
