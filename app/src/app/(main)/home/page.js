@@ -14,6 +14,7 @@ import StatsBanner from "@/components/StatsBanner";
 import AutoImageCarousel from "@/components/AutoImageCarousel";
 import GSAPTextReveal from "@/components/GSAPTextReveal";
 import GSAPBlockReveal from "@/components/GSAPBlockReveal";
+import DonationBanner from "@/components/DonationBanner";
 
 export const metadata = {
   title: "Home | लोकसंस्कृती कला सेवा संघ",
@@ -347,7 +348,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <DonationBanner />
+
       {/* Connect Section — Social Media CTA */}
+
       <section className="bg-[var(--dark-brown)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-20">
           <div className="text-center mb-10">
