@@ -9,7 +9,7 @@ export const metadata = {
     "Browse photos from concerts, Academy events, achievements, and the Philadelphia US tour — Lok Sanskruti Kala Seva Sangh.",
 };
 
-const CATEGORIES = ["All", "Concerts", "Academy", "Achievements", "Philadelphia (US)"];
+const CATEGORIES = ["All", "Concerts", "Academy", "Achievements", "Philadelphia (US)", "Additional Images"];
 
 export default function GalleryPage() {
   return (

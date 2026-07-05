@@ -435,6 +435,686 @@ const galleryData = [
     "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
   },
   {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.02.53%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.02.53.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.02.54.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.02.55%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.02.55.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.41.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.42%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.42.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.43%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.43.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.44%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.44.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.45%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.45%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.45.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.46%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.46.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.47%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.47.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.48%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.48%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.48.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.49%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.49.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.50%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.50.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.51%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.51%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.51.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.52%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.52.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.53%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.53.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.54%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.54%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.54.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.55%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.55.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.56%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.56.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.57%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.57%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.57.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.58%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.58.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.59%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.05.59.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.00%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.00%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.00.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.01.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.45%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.45.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.46%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.46%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.46.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.47%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.47%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.47.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.48%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.48%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.48.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.49%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.49%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.49.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.50%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.50%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.50.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.51%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.51%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.51.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.52%20(1).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.52%20(2).jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.52.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Achievements/WhatsApp%20Image%202026-07-03%20at%2018.06.53.jpeg",
+    "category": "Achievements",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Achievements"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.18.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.19%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.19%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.19.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.20.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.21%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.21.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.23%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.23.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.24%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.24%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.24.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.25%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.25%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.25.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.26%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.26.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.27%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.27.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.28%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.28%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.07.28.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.04.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.20%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.20.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.21%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.21%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.21.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.23.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.41.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.45%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.45.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.46%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.46.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.48%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.48.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.49.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.51.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.54.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.56.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.57%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.57.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.58%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.58.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.59%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.59%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.21.59.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.00%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.00.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.01%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.01%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.01.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.02%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.02.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.03%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.03.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.04%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.04%20(2).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.04.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.05%20(1).jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
+    "src": "/images/gallery/Additional%20Images/WhatsApp%20Image%202026-07-03%20at%2018.22.05.jpeg",
+    "category": "Additional Images",
+    "alt": "Lok Sanskruti Kala Seva Sangh — Additional Images"
+  },
+  {
     "src": "/images/gallery/Concerts/Concert%20(1).webp",
     "category": "Concerts",
     "alt": "Lok Sanskruti Kala Seva Sangh — Concerts"

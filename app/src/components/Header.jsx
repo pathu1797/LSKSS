@@ -17,6 +17,7 @@ const navLinks = [
   { href: "/academy", label: "Academy" },
   { href: "/achievements", label: "Achievements" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/downloads", label: "Downloads" },
   { href: "/contact", label: "Contact" },
 ];
 
