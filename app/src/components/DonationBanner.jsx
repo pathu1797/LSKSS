@@ -30,7 +30,7 @@ export default function DonationBanner() {
           rel="noopener noreferrer" 
           className="btn-saffron inline-flex items-center justify-center px-10 py-4 text-base sm:text-lg shadow-lg hover:shadow-[var(--primary-saffron)]/30"
         >
-          देणगी द्या (Donate Now)
+          Donate Now
         </a>
       </div>
     </section>
