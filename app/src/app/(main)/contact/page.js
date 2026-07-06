@@ -36,7 +36,7 @@ const socialLinks = [
     icon: "/images/facebook.png",
   },
   {
-    href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+    href: "https://wa.me/917020692252",
     label: "WhatsApp",
     icon: "/images/whatsapp.png",
   },
@@ -168,7 +168,7 @@ export default function ContactPage() {
                 <span className="gold-divider mb-5" />
                 <div className="mt-5 flex items-center gap-5">
                   <a
-                    href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                    href="https://wa.me/917020692252"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-shrink-0 bg-white p-2.5 rounded-xl border border-[var(--accent-gold)]/20 hover:shadow-lg transition-shadow"
@@ -192,7 +192,7 @@ export default function ContactPage() {
                       Scan the QR code or click the button below to message us directly on WhatsApp.
                     </p>
                     <a
-                      href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                      href="https://wa.me/917020692252"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-xs font-semibold rounded-lg hover:bg-green-700 transition-colors"

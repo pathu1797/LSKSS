@@ -391,7 +391,7 @@ export default function HomePage() {
                 color: "from-blue-600 to-blue-700",
               },
               {
-                href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+                href: "https://wa.me/917020692252",
                 label: "WhatsApp",
                 icon: "/images/whatsapp.png",
                 desc: "Direct Chat",
@@ -431,7 +431,7 @@ export default function HomePage() {
                 Scan to connect on WhatsApp
               </p>
               <a
-                href="https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0"
+                href="https://wa.me/917020692252"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white p-3 rounded-xl hover:shadow-lg hover:shadow-[var(--accent-gold)]/20 transition-shadow"

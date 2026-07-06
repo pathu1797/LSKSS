@@ -38,7 +38,7 @@ const socialLinks = [
     icon: "/images/facebook.png",
   },
   {
-    href: "https://api.whatsapp.com/message/6ADTKOCQR43JH1?autoload=1&app_absent=0",
+    href: "https://wa.me/917020692252",
     label: "WhatsApp",
     icon: "/images/whatsapp.png",
   },
