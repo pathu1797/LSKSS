@@ -92,7 +92,7 @@ export default function AchievementsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-12">
-            {/* Image 1 (Main) */}
+
             <div className="md:col-span-2 lg:col-span-4 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-[16/9] lg:aspect-[21/9] overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/main.webp" alt="Harirang Concert Main" fill priority sizes="100vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -100,7 +100,7 @@ export default function AchievementsPage() {
               </div>
             </div>
             
-            {/* Image 2 (R1) */}
+
             <div className="md:col-span-1 lg:col-span-2 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-video overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/r1.jpeg" alt="Harirang Concert R1" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -108,7 +108,7 @@ export default function AchievementsPage() {
               </div>
             </div>
 
-            {/* Image 3 (R2) */}
+
             <div className="md:col-span-1 lg:col-span-2 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-video overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/r2.jpeg" alt="Harirang Concert R2" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -116,7 +116,7 @@ export default function AchievementsPage() {
               </div>
             </div>
 
-            {/* Image 4 (R5 - Poster) */}
+
             <div className="col-span-1 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-square md:aspect-[4/3] overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/r5.jpeg" alt="Harirang Concert R5" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -124,7 +124,7 @@ export default function AchievementsPage() {
               </div>
             </div>
 
-            {/* Image 5 (R3 - Poster) */}
+
             <div className="col-span-1 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-square md:aspect-[4/3] overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/r3.jpeg" alt="Harirang Concert R3" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -132,7 +132,7 @@ export default function AchievementsPage() {
               </div>
             </div>
 
-            {/* Image 6 (R4-1 - Poster) */}
+
             <div className="col-span-1 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-square md:aspect-[4/3] overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/r4-1.jpeg" alt="Harirang Concert R4-1" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -140,7 +140,7 @@ export default function AchievementsPage() {
               </div>
             </div>
 
-            {/* Image 7 (R4-2 - Poster) */}
+
             <div className="col-span-1 bg-[var(--parchment-dark)] p-3 md:p-4 border border-[var(--accent-gold)]/40 shadow-md rounded-sm flex flex-col hover:shadow-xl hover:border-[var(--accent-gold)] transition-all duration-300 group">
               <div className="relative w-full h-full aspect-square md:aspect-[4/3] overflow-hidden rounded-[2px] bg-black/5">
                 <Image src="/images/achievements/harirang/r4-2.jpeg" alt="Harirang Concert R4-2" fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -180,28 +180,28 @@ export default function AchievementsPage() {
                 </p>
               </div>
               <div className="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 w-full h-full min-h-[450px] p-6 lg:p-0 lg:py-10 lg:pr-10">
-                {/* Photo T1 (Primary) */}
+
                 <div className="col-span-2 lg:row-span-2 relative w-full h-full min-h-[250px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t1.jpeg" alt="PM Modi Event Primary" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
                 </div>
                 
-                {/* Photo T2 (Secondary Highlight) */}
+
                 <div className="col-span-2 lg:row-span-1 relative w-full h-full min-h-[200px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t2.jpeg" alt="PM Modi Event Secondary" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
                 </div>
                 
-                {/* Photo T3 (Supporting) */}
+
                 <div className="col-span-1 lg:row-span-1 relative w-full h-full min-h-[150px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t3.jpeg" alt="PM Modi Event Supporting 1" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105" />
                   </div>
                 </div>
 
-                {/* Photo T4 (Supporting) */}
+
                 <div className="col-span-1 lg:row-span-1 relative w-full h-full min-h-[150px] lg:min-h-0 bg-white rounded-sm border border-[var(--accent-gold)]/30 shadow-md p-2 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image src="/images/achievements/harirang/t4.jpeg" alt="PM Modi Event Supporting 2" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -213,7 +213,7 @@ export default function AchievementsPage() {
         </div>
       </section>
 
-      {/* Press & Media Coverage */}
+
       <section className="bg-[var(--bg-parchment)] border-t border-[var(--accent-gold)]/10 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24 text-center">
           <GSAPTextReveal as="h2" className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
@@ -237,7 +237,7 @@ export default function AchievementsPage() {
         </div>
       </section>
 
-      {/* Certificates & Recognitions */}
+
       <section className="bg-[var(--parchment-dark)] py-20">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
           <div className="text-center mb-12">
@@ -247,7 +247,7 @@ export default function AchievementsPage() {
             <span className="gold-divider mx-auto mt-4" />
           </div>
 
-          {/* Carousel 1: Adv. Pandurang Shinde */}
+
           <h3 className="text-3xl font-playfair font-bold text-[var(--primary-saffron)] text-center mb-8">
             Adv. Pandurang Shinde
           </h3>
@@ -266,7 +266,7 @@ export default function AchievementsPage() {
           
           <div className="mt-20 mb-12" />
 
-          {/* Carousel 2: Prof. Haridas Shinde */}
+
           <h3 className="text-3xl font-playfair font-bold text-[var(--primary-saffron)] text-center mb-8">
             Prof. Haridas Shinde
           </h3>

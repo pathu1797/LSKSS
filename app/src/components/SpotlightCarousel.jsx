@@ -22,7 +22,7 @@ export default function SpotlightCarousel({ images }) {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto overflow-hidden py-12 px-4 sm:px-12">
-      {/* Navigation Buttons */}
+
       <button
         onClick={prevSlide}
         className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-20 bg-[var(--parchment-dark)] border border-[var(--accent-gold)] text-[var(--accent-gold)] p-3 rounded-full shadow-lg hover:bg-[var(--accent-gold)] hover:text-white transition-colors focus:outline-none"
@@ -39,7 +39,7 @@ export default function SpotlightCarousel({ images }) {
         <ChevronRight size={24} />
       </button>
 
-      {/* Carousel Track */}
+
       <div className="relative h-72 sm:h-80 flex items-center justify-center perspective-[1000px]">
         {images.map((src, index) => {
           let offset = index - activeIndex;

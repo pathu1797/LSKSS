@@ -83,7 +83,7 @@ export default function HomePage() {
 
       <StatsBanner />
 
-      {/* Featured YouTube Videos Section */}
+
       <section className="bg-[var(--dark-brown)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="text-center mb-12">
@@ -142,7 +142,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* YouTube Playlists */}
+
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <a
               href="https://www.youtube.com/playlist?list=PLxF6H57GoZMjHrxS_sA-UkG_u161AEQQI"
@@ -175,7 +175,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Activities Section */}
+
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="text-center mb-12">
@@ -296,7 +296,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section */}
+
       <section className="bg-[var(--parchment-dark)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -350,7 +350,7 @@ export default function HomePage() {
 
       <DonationBanner />
 
-      {/* Connect Section — Social Media CTA */}
+
 
       <section className="bg-[var(--dark-brown)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-20">
@@ -424,7 +424,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* QR Codes */}
+
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
             <div className="text-center">
               <p className="text-xs text-[var(--gold-light)]/40 mb-3 font-[family-name:var(--font-body)]">
@@ -469,7 +469,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Events Section */}
+
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
           <div className="text-center mb-10">

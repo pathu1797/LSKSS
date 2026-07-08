@@ -10,7 +10,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [selectedIndex, setSelectedIndex] = useState(null);
 
-  /* ── Derived data ── */
+
   const filteredImages = useMemo(() => {
     if (activeCategory === "All") return images;
     return images.filter((img) => img.category === activeCategory);
@@ -25,7 +25,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
   const remainingCount = filteredImages.length - visibleImages.length;
   const hasMore = remainingCount > 0;
 
-  /* ── Reset when tab changes ── */
+
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
     setSelectedIndex(null);
@@ -35,7 +35,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
     setVisibleCount((prev) => prev + PAGE_SIZE);
   };
 
-  /* ── Lightbox helpers ── */
+
   const closeModal = useCallback(() => setSelectedIndex(null), []);
 
   const showPrev = useCallback(
@@ -94,7 +94,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
     <>
       <section className="bg-[var(--bg-parchment)]">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-10 lg:py-14 flex flex-col items-center">
-          {/* ── Filter Tabs ── */}
+
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             {categories.map((cat) => {
               const isActive = activeCategory === cat;
@@ -125,7 +125,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
             })}
           </div>
 
-          {/* ── Gallery Grid ── */}
+
           {filteredImages.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-sm text-[var(--text-espresso)]/50 font-[family-name:var(--font-body)]">
@@ -157,7 +157,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
                 ))}
               </div>
 
-              {/* ── Load More Button ── */}
+
               {hasMore && (
                 <button
                   onClick={handleLoadMore}
@@ -168,7 +168,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
                     transition-all duration-300 ease-out
                     shadow-[0_0_0_0_var(--accent-gold)] hover:shadow-[0_4px_20px_-4px_var(--accent-gold)]"
                 >
-                  {/* Decorative left bar */}
+
                   <span className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-[var(--primary-saffron)] group-hover:h-full transition-all duration-500 rounded-full" />
 
                   <svg
@@ -194,7 +194,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
                     </span>
                   </span>
 
-                  {/* Decorative right bar */}
+
                   <span className="absolute right-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-[var(--primary-saffron)] group-hover:h-full transition-all duration-500 rounded-full" />
                 </button>
               )}
@@ -203,7 +203,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
         </div>
       </section>
 
-      {/* ── Lightbox Modal ── */}
+
       {selectedIndex !== null && filteredImages[selectedIndex] && (
         <div
           className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
@@ -234,7 +234,7 @@ export default function GalleryGrid({ images = [], categories = [] }) {
             className="relative w-full max-w-5xl h-full max-h-[85vh] flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Lightbox uses raw <img> intentionally — single visible image, needs instant display */}
+
             <img
               src={filteredImages[selectedIndex].src}
               alt={filteredImages[selectedIndex].alt}

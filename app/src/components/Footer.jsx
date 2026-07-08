@@ -41,7 +41,7 @@ export default function Footer() {
 
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 py-14 lg:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          {/* Column 1: About + Logo */}
+
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full border-2 border-[var(--accent-gold)] overflow-hidden flex-shrink-0">
@@ -66,7 +66,7 @@ export default function Footer() {
               Reg. No. महा .३६७/२०२२ एफ - २४१२६
             </p>
 
-            {/* Social Media Icons */}
+
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
                 <a
@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+
           <div>
             <h4 className="font-[family-name:var(--font-heading)] text-sm font-bold text-white mb-4">
               Quick Links
@@ -109,7 +109,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Academy + WhatsApp QR */}
+
           <div>
             <h4 className="font-[family-name:var(--font-heading)] text-sm font-bold text-white mb-4">
               स्वरसंध्या संगीत निकेतन
@@ -135,7 +135,7 @@ export default function Footer() {
               View All Courses →
             </Link>
 
-            {/* QR Codes */}
+
             <div className="mt-6 pt-5 border-t border-[var(--accent-gold)]/20 flex gap-4">
               <div>
                 <p className="text-[11px] font-semibold text-white mb-2 truncate" title="WhatsApp वर संपर्क करा">
@@ -185,7 +185,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Contact */}
+
           <div>
             <h4 className="font-[family-name:var(--font-heading)] text-sm font-bold text-white mb-4">
               Contact Us
@@ -227,7 +227,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* YouTube Playlists */}
+
             <div className="mt-5 pt-4 border-t border-[var(--accent-gold)]/20">
               <p className="text-xs font-semibold text-white mb-2.5">
                 YouTube Playlists

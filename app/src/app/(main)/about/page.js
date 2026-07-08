@@ -135,11 +135,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Timeline Section ── */}
+
       <section className="bg-[var(--bg-parchment)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-20">
           
-          {/* Sticky Left Column */}
+
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
             <div className="flex items-center gap-3 mb-6">
               <Award className="text-[var(--accent-gold)]" size={32} />
@@ -153,7 +153,7 @@ export default function AboutPage() {
             <span className="gold-divider mt-8 mb-8" />
           </div>
 
-          {/* Scrolling Right Column */}
+
           <div className="lg:col-span-8">
             <div className="flex flex-col">
               {timelineEvents.map((event, i) => (
@@ -177,11 +177,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Leadership & Inspiration ── */}
-      {/* Profile 1: Inspiration */}
+
+
       <section className="bg-[var(--parchment-dark)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-20">
-          {/* Sticky Left Column */}
+
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start text-left">
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[var(--accent-gold)] shadow-xl mb-6">
               <Image
@@ -201,7 +201,7 @@ export default function AboutPage() {
             <span className="gold-divider mt-4" />
           </div>
 
-          {/* Scrolling Right Column */}
+
           <div className="lg:col-span-8">
             <div className="prose prose-lg max-w-none text-[var(--text-espresso)] leading-loose">
               <ScrollReveal>
@@ -276,10 +276,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Profile 2: Pandurang Shinde */}
+
       <section className="bg-[var(--bg-parchment)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-20">
-          {/* Sticky Left Column */}
+
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start text-left">
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[var(--accent-gold)] shadow-xl mb-6">
               <Image
@@ -299,7 +299,7 @@ export default function AboutPage() {
             <span className="gold-divider mt-4" />
           </div>
 
-          {/* Scrolling Right Column */}
+
           <div className="lg:col-span-8">
             <div className="prose prose-lg max-w-none text-[var(--text-espresso)] leading-loose">
               <ScrollReveal>
@@ -386,10 +386,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Profile 3: Haridas Shinde */}
+
       <section className="bg-[var(--parchment-dark)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-20">
-          {/* Sticky Left Column */}
+
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start text-left">
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-[var(--accent-gold)] shadow-xl mb-6">
               <Image
@@ -409,7 +409,7 @@ export default function AboutPage() {
             <span className="gold-divider mt-4" />
           </div>
 
-          {/* Scrolling Right Column */}
+
           <div className="lg:col-span-8">
             <div className="prose prose-lg max-w-none text-[var(--text-espresso)] leading-loose">
               <ScrollReveal>

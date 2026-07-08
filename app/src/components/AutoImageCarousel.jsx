@@ -29,7 +29,7 @@ export default function AutoImageCarousel({ images, altText = "Carousel Image", 
             index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          {/* Blurred background layer */}
+
           <Image
             src={src}
             alt=""
@@ -38,7 +38,7 @@ export default function AutoImageCarousel({ images, altText = "Carousel Image", 
             className="object-cover blur-xl opacity-40 scale-110"
             priority={index === 0}
           />
-          {/* Main uncropped image */}
+
           <Image
             src={src}
             alt={`${altText} ${index + 1}`}

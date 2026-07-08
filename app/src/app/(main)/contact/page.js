@@ -160,7 +160,7 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              {/* WhatsApp QR Code Card */}
+
               <div className="card-institutional p-7">
                 <h3 className="text-lg font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
                   WhatsApp वर संपर्क करा
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* YouTube QR Code Card */}
+
               <div className="card-institutional p-7">
                 <h3 className="text-lg font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4">
                   YouTube वर सबस्क्राईब करा
@@ -248,7 +248,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Real Google Maps Embed */}
+
               <div className="card-institutional p-0 overflow-hidden h-64 md:h-80 w-full relative">
                 <iframe
                   src="https://maps.google.com/maps?q=Swarsandhya+Music+Academy+and+Swarsandhya+Sangit+Niketan,+Kedgaon,+Ahmednagar&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -263,7 +263,7 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* Social Media Card */}
+
               <div className="card-institutional p-6">
                 <p className="text-xs font-bold text-[var(--text-espresso)] font-[family-name:var(--font-body)] mb-3">
                   Follow Us:
