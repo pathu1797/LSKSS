@@ -61,11 +61,11 @@ export default function Header() {
               <span>+91 7020692252</span>
             </a>
             <a
-              href="mailto:Loksanskruti.kalaseva.sangh@gmail.com"
+              href="mailto:loksanskruti.kalaseva.sangh@gmail.com"
               className="hidden sm:flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <Mail size={12} />
-              <span>Loksanskruti.kalaseva.sangh@gmail.com</span>
+              <span>loksanskruti.kalaseva.sangh@gmail.com</span>
             </a>
           </div>
           <div className="flex items-center gap-3">
@@ -222,10 +222,10 @@ export default function Header() {
             <Phone size={12} /> +91 7020692252
           </a>
           <a
-            href="mailto:Loksanskruti.kalaseva.sangh@gmail.com"
+            href="mailto:loksanskruti.kalaseva.sangh@gmail.com"
             className="flex items-center gap-2 text-[var(--gold-light)] text-xs mb-4"
           >
-            <Mail size={12} /> Loksanskruti.kalaseva.sangh@gmail.com
+            <Mail size={12} /> loksanskruti.kalaseva.sangh@gmail.com
           </a>
           <div className="flex items-center gap-3 pb-4">
             {socialLinks.map((social) => (

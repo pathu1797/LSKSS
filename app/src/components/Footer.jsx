@@ -218,11 +218,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:Loksanskruti.kalaseva.sangh@gmail.com"
+                  href="mailto:loksanskruti.kalaseva.sangh@gmail.com"
                   className="flex items-center gap-2.5 text-xs opacity-80 hover:text-[var(--primary-saffron)] transition-colors"
                 >
                   <Mail size={14} className="flex-shrink-0 text-[var(--primary-saffron)]" />
-                  Loksanskruti.kalaseva.sangh@gmail.com
+                  loksanskruti.kalaseva.sangh@gmail.com
                 </a>
               </li>
             </ul>

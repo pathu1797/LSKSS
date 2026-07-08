@@ -150,10 +150,10 @@ export default function ContactPage() {
                         Email
                       </p>
                       <a
-                        href="mailto:Loksanskruti.kalaseva.sangh@gmail.com"
+                        href="mailto:loksanskruti.kalaseva.sangh@gmail.com"
                         className="text-xs text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] hover:text-[var(--primary-saffron)]"
                       >
-                        Loksanskruti.kalaseva.sangh@gmail.com
+                        loksanskruti.kalaseva.sangh@gmail.com
                       </a>
                     </div>
                   </li>
