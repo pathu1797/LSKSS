@@ -100,10 +100,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-10">
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl group bg-[var(--parchment-dark)]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 opacity-60"></div>
-              <Image 
-                src="/images/about-us/1.jpeg" 
-                alt="Lok Sanskruti Kala Seva Sangh - Founders" 
-                fill 
+              <Image
+                src="/images/about-us/1.jpeg"
+                alt="Lok Sanskruti Kala Seva Sangh - Founders"
+                fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 priority
                 className="object-cover object-top filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -111,10 +111,10 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl group bg-[var(--parchment-dark)]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 opacity-60"></div>
-              <Image 
-                src="/images/about-us/2.jpeg" 
-                alt="Lok Sanskruti Kala Seva Sangh - Performance" 
-                fill 
+              <Image
+                src="/images/about-us/2.jpeg"
+                alt="Lok Sanskruti Kala Seva Sangh - Performance"
+                fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 priority
                 className="object-cover object-[center_15%] filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -122,10 +122,10 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl group bg-[var(--parchment-dark)]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 opacity-60"></div>
-              <Image 
-                src="/images/about-us/3.jpeg" 
-                alt="Lok Sanskruti Kala Seva Sangh - Heritage" 
-                fill 
+              <Image
+                src="/images/about-us/3.jpeg"
+                alt="Lok Sanskruti Kala Seva Sangh - Heritage"
+                fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 priority
                 className="object-cover object-top filter contrast-110 saturate-100 group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
       <section className="bg-[var(--bg-parchment)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-20">
-          
+
 
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
             <div className="flex items-center gap-3 mb-6">
@@ -173,7 +173,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          
+
         </div>
       </section>
 
@@ -209,7 +209,7 @@ export default function AboutPage() {
                   समाजभूषण विद्वान विद्यावाचस्पती परमपुज्य गुरुवर्य ह.भ.प. पुरुषोत्तम महाराज शिंदे (हातवळणकर) — हातवळण गावचे, नगर तालुका, अहमदनगर जिल्हा. त्यांचे शिक्षण इ.३ री पर्यंत झाले. सर्वजण त्यांना &quot;उत्तम&quot; म्हणून हाक मारत.
                 </p>
               </ScrollReveal>
-              
+
               <ScrollReveal>
                 <h4 className="text-2xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)] mb-4 mt-8">
                   बालपण व गोंधळी परंपरा
@@ -293,9 +293,6 @@ export default function AboutPage() {
             <h3 className="text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Adv. Pandurang Uttam Shinde
             </h3>
-            <p className="text-lg font-[family-name:var(--font-body)] font-semibold text-[var(--text-espresso)] mt-2 mb-1">
-              International Artist
-            </p>
             <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-2">
               अध्यक्ष (President)
             </p>
@@ -406,9 +403,6 @@ export default function AboutPage() {
             <h3 className="text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Haridas Uttam Shinde
             </h3>
-            <p className="text-lg font-[family-name:var(--font-body)] font-semibold text-[var(--text-espresso)] mt-2 mb-1">
-              International Folk Artist and Shahir
-            </p>
             <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-2">
               उपाध्यक्ष (Vice President)
             </p>
@@ -429,7 +423,7 @@ export default function AboutPage() {
                   Gondhali Heritage
                 </h4>
                 <p className="mb-6 text-lg">
-                  <strong>Seventeenth generation descendant</strong> of Gondhali Agyandas who served in the court of Chhatrapati Shivaji Maharaj.
+                  <strong>Seventeenth generation descendant</strong> of Gondhali Tradition of Agyandas who served in the court of Chhatrapati Shivaji Maharaj.
                 </p>
               </ScrollReveal>
 
@@ -570,9 +564,9 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 flex justify-center w-full">
-            <a 
-              href="/documents/lskss-more-information.pdf" 
-              download 
+            <a
+              href="/documents/lskss-more-information.pdf"
+              download
               className="btn-saffron px-8 py-4 inline-flex items-center gap-3 font-inter font-semibold transition-transform duration-300 ease-out hover:-translate-y-1"
             >
               <Download size={20} />
