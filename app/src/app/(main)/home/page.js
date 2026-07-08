@@ -267,7 +267,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="group">
+            <div className="group lg:col-span-2 lg:w-[calc(50%-1rem)] lg:mx-auto w-full">
               <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
                 <iframe
                   src="https://www.youtube.com/embed/VOuplwqwzng"
