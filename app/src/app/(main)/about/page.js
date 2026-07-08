@@ -293,6 +293,9 @@ export default function AboutPage() {
             <h3 className="text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Adv. Pandurang Uttam Shinde
             </h3>
+            <p className="text-lg font-[family-name:var(--font-body)] font-semibold text-[var(--text-espresso)] mt-2 mb-1">
+              International Artist
+            </p>
             <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-2">
               अध्यक्ष (President)
             </p>
