@@ -140,6 +140,132 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/mJTHThYkcfo"
+                  title="Haridas Shinde l Special Interview on 91.1 FM Radio City"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  Haridas Shinde — Special Interview on 91.1 FM Radio City
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  About Traditional Folk · Ahmednagar
+                </p>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/dJgbE0RcHcs"
+                  title="Haridas Shinde World of Rhythm Musical band"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  World of Rhythm Musical Band
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  Haridas Shinde &amp; Udayaji Ramdas
+                </p>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/FWGyIaaClD0"
+                  title="Haridas Shinde and Ensemble Group"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  Haridas Shinde and Ensemble Group
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  Lok Sanskruti Kala Seva Sangh
+                </p>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/bfJ59oRknEM"
+                  title="अमेरिकेच्या भूमीवर पारंपरिक गोंधळ"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  अमेरिकेच्या भूमीवर पारंपरिक गोंधळ
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  गेल्या ७० वर्षांत प्रथमच सादर करणारे आंतरराष्ट्रीय शाहिर हरिदासजी
+                </p>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/3tPuoGgUqRA"
+                  title="Powada ll Chatrapati Sambhaji Raje"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  Powada — Chatrapati Sambhaji Raje
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  Presented by Shahir Haridas Shinde
+                </p>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/aQYplds0yPA"
+                  title="Haridas shinde"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  Haridas Shinde Performance
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  Lok Sanskruti Kala Seva Sangh
+                </p>
+              </div>
+            </div>
           </div>
 
 
