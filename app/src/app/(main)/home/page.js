@@ -266,6 +266,27 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
+            <div className="group">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden border-2 border-[var(--accent-gold)]/30 shadow-xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/VOuplwqwzng"
+                  title="Lok Sanskruti Kala Seva Sangh Performance"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-base font-[family-name:var(--font-heading)] font-bold text-[var(--gold-light)] mb-1">
+                  Haridas Shinde Performance
+                </h3>
+                <p className="text-xs text-[var(--gold-light)]/50 font-[family-name:var(--font-body)] leading-relaxed">
+                  Lok Sanskruti Kala Seva Sangh
+                </p>
+              </div>
+            </div>
           </div>
 
 
