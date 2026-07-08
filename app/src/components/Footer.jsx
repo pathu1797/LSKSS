@@ -203,7 +203,7 @@ export default function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin size={14} className="flex-shrink-0 mt-0.5 text-[var(--primary-saffron)]" />
                 <span className="text-xs leading-relaxed opacity-80">
-                  नेवाळे वस्ती, दत्त मंदीर, मांजरी खुर्द,<br />
+                  नेवाळे वस्ती, दत्त मंदीर, मांजरी कोलवडी,<br />
                   ता. हवेली, जिल्हा पुणे
                 </span>
               </li>
