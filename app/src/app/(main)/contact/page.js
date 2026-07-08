@@ -116,7 +116,7 @@ export default function ContactPage() {
                       <p className="text-xs text-[var(--text-espresso)]/70 font-[family-name:var(--font-body)] leading-relaxed">
                         नेवाळे वस्ती, दत्त मंदीर (दत्त नगर),
                         <br />
-                        मांजरी खुर्द, ता. हवेली, जिल्हा पुणे
+                        मांजरी कोलवडी, ता. हवेली, जिल्हा पुणे
                       </p>
                     </div>
                   </li>
