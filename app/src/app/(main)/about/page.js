@@ -323,7 +323,7 @@ export default function AboutPage() {
                   Gondhali Heritage
                 </h4>
                 <p className="mb-6 text-lg">
-                  <strong>Seventeenth generation descendant</strong> of Gondhali Agyandas who served in the court of Chhatrapati Shivaji Maharaj, carrying forward an unbroken family tradition of Gondhali performing arts.
+                  <strong>Seventeenth generation descendant</strong> of Gondhali Tradition of Agyandas who served in the court of Chhatrapati Shivaji Maharaj, carrying forward an unbroken family tradition of Gondhali performing arts.
                 </p>
               </ScrollReveal>
 
@@ -403,6 +403,9 @@ export default function AboutPage() {
             <h3 className="text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Haridas Uttam Shinde
             </h3>
+            <p className="text-lg font-[family-name:var(--font-body)] font-semibold text-[var(--text-espresso)] mt-2 mb-1">
+              International Folk Artist and Shahir
+            </p>
             <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-2">
               उपाध्यक्ष (Vice President)
             </p>
