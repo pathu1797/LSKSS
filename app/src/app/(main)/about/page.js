@@ -293,7 +293,10 @@ export default function AboutPage() {
             <h3 className="text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Adv. Pandurang Uttam Shinde
             </h3>
-            <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-2">
+            <p className="text-lg font-[family-name:var(--font-body)] font-medium text-[var(--text-espresso)] mt-2">
+              International Artist
+            </p>
+            <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-1">
               अध्यक्ष (President)
             </p>
             <span className="gold-divider mt-4" />
@@ -403,7 +406,10 @@ export default function AboutPage() {
             <h3 className="text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--text-espresso)]">
               Haridas Uttam Shinde
             </h3>
-            <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-2">
+            <p className="text-lg font-[family-name:var(--font-body)] font-medium text-[var(--text-espresso)] mt-2">
+              International Folk Artist and Shahir
+            </p>
+            <p className="text-xl font-[family-name:var(--font-body)] font-medium text-[var(--primary-saffron)] mt-1">
               उपाध्यक्ष (Vice President)
             </p>
             <span className="gold-divider mt-4" />
